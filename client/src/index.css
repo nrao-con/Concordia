@@ -1,0 +1,1336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overscroll-behavior: none;
+  position: relative; /* Required: Framer Motion useScroll needs a non-static scroll container to calculate offsets correctly */
+}
+
+/* LIGHT MODE */
+:root {
+  --button-outline: rgba(0,0,0, .10);
+  --badge-outline: rgba(0,0,0, .05);
+  --opaque-button-border-intensity: -8;
+  --elevate-1: rgba(0,0,0, .03);
+  --elevate-2: rgba(0,0,0, .08);
+  --background: 210 5% 98%;
+  --foreground: 210 6% 12%;
+  --border: 210 5% 91%;
+  --card: 210 5% 96%;
+  --card-foreground: 210 6% 12%;
+  --card-border: 210 5% 93%;
+  --sidebar: 210 5% 94%;
+  --sidebar-foreground: 210 6% 12%;
+  --sidebar-border: 210 5% 90%;
+  --sidebar-primary: 215 45% 55%;
+  --sidebar-primary-foreground: 210 5% 98%;
+  --sidebar-accent: 210 8% 88%;
+  --sidebar-accent-foreground: 210 6% 18%;
+  --sidebar-ring: 215 45% 55%;
+  --popover: 210 5% 92%;
+  --popover-foreground: 210 6% 12%;
+  --popover-border: 210 5% 88%;
+  --primary: 215 45% 55%;
+  --primary-foreground: 210 5% 98%;
+  --secondary: 210 8% 86%;
+  --secondary-foreground: 210 6% 18%;
+  --muted: 210 8% 88%;
+  --muted-foreground: 210 6% 32%;
+  --accent: 210 12% 90%;
+  --accent-foreground: 210 6% 18%;
+  --destructive: 0 72% 48%;
+  --destructive-foreground: 0 5% 98%;
+  --input: 210 6% 65%;
+  --ring: 215 45% 55%;
+  --chart-1: 215 45% 40%;
+  --chart-2: 162 68% 32%;
+  --chart-3: 280 65% 38%;
+  --chart-4: 32 88% 42%;
+  --chart-5: 340 75% 45%;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: Menlo, monospace;
+  --radius: .5rem;
+  --shadow-2xs: 0 1px 2px hsl(210 5% 12% / .06);
+  --shadow-xs: 0 2px 5px hsl(210 5% 12% / .08);
+  --shadow-sm: 0 4px 12px hsl(210 5% 12% / .09);
+  --shadow: 0 8px 22px hsl(210 5% 12% / .11);
+  --shadow-md: 0 12px 30px hsl(210 5% 12% / .13);
+  --shadow-lg: 0 18px 44px hsl(210 5% 12% / .15);
+  --shadow-xl: 0 24px 60px hsl(210 5% 12% / .17);
+  --shadow-2xl: 0px 2px 0px 0px hsl(210 5% 12% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+  --glow-1: 215 45% 65%;
+  --glow-2: 195 40% 60%;
+  --glow-3: 220 35% 80%;
+
+/* Fallback for older browsers */
+  --sidebar-primary-border: hsl(var(--sidebar-primary));
+  --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --sidebar-accent-border: hsl(var(--sidebar-accent));
+  --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --primary-border: hsl(var(--primary));
+  --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --secondary-border: hsl(var(--secondary));
+  --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --muted-border: hsl(var(--muted));
+  --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --accent-border: hsl(var(--accent));
+  --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --destructive-border: hsl(var(--destructive));
+  --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+}
+
+.dark {
+  --button-outline: rgba(255,255,255, .10);
+  --badge-outline: rgba(255,255,255, .05);
+  --opaque-button-border-intensity: 9;
+  --elevate-1: rgba(255,255,255, .04);
+  --elevate-2: rgba(255,255,255, .09);
+  --background: 220 22% 14%;
+  --foreground: 210 5% 95%;
+  --border: 220 22% 24%;
+  --card: 220 22% 17%;
+  --card-foreground: 210 5% 95%;
+  --card-border: 220 22% 20%;
+  --sidebar: 220 22% 19%;
+  --sidebar-foreground: 210 5% 95%;
+  --sidebar-border: 210 5% 16%;
+  --sidebar-primary: 215 40% 65%;
+  --sidebar-primary-foreground: 210 5% 98%;
+  --sidebar-accent: 210 8% 16%;
+  --sidebar-accent-foreground: 210 5% 88%;
+  --sidebar-ring: 215 40% 65%;
+  --popover: 210 5% 14%;
+  --popover-foreground: 210 5% 95%;
+  --popover-border: 210 5% 18%;
+  --primary: 215 40% 62%;
+  --primary-foreground: 210 5% 98%;
+  --secondary: 210 8% 18%;
+  --secondary-foreground: 210 5% 92%;
+  --muted: 210 8% 17%;
+  --muted-foreground: 210 5% 75%;
+  --accent: 210 12% 15%;
+  --accent-foreground: 210 5% 92%;
+  --destructive: 0 72% 32%;
+  --destructive-foreground: 0 5% 98%;
+  --input: 210 6% 42%;
+  --ring: 215 40% 65%;
+  --chart-1: 215 40% 65%;
+  --chart-2: 162 68% 68%;
+  --chart-3: 280 65% 72%;
+  --chart-4: 32 88% 68%;
+  --chart-5: 340 75% 70%;
+  --shadow-2xs: 0 1px 2px hsl(210 5% 95% / .06);
+  --shadow-xs: 0 2px 5px hsl(210 5% 5% / .18);
+  --shadow-sm: 0 4px 12px hsl(210 5% 5% / .22);
+  --shadow: 0 8px 22px hsl(210 5% 5% / .26);
+  --shadow-md: 0 12px 30px hsl(210 5% 5% / .30);
+  --shadow-lg: 0 18px 44px hsl(210 5% 5% / .34);
+  --shadow-xl: 0 24px 60px hsl(210 5% 5% / .38);
+  --shadow-2xl: 0px 2px 0px 0px hsl(210 5% 95% / 0.00);
+  --glow-1: 215 40% 68%;
+  --glow-2: 195 35% 62%;
+  --glow-3: 220 35% 75%;
+
+/* Fallback for older browsers */
+  --sidebar-primary-border: hsl(var(--sidebar-primary));
+  --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --sidebar-accent-border: hsl(var(--sidebar-accent));
+  --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --primary-border: hsl(var(--primary));
+  --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --secondary-border: hsl(var(--secondary));
+  --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --muted-border: hsl(var(--muted));
+  --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --accent-border: hsl(var(--accent));
+  --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --destructive-border: hsl(var(--destructive));
+  --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+}
+
+@keyframes neon-pulse {
+  0%, 100% { opacity: 0.65; box-shadow: none; }
+}
+
+@keyframes float-up {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-80px) scale(1.5); }
+}
+
+@keyframes confetti-pop {
+  0% { transform: scale(0) rotate(0deg); opacity: 1; }
+  50% { transform: scale(1.2) rotate(180deg); opacity: 1; }
+  100% { transform: scale(0) rotate(360deg); opacity: 0; }
+}
+
+@keyframes coin-spin {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.funnel-mesh-bg {
+  background: linear-gradient(
+    -45deg,
+    hsl(225 40% 8%),
+    hsl(215 45% 14%),
+    hsl(160 35% 12%),
+    hsl(225 40% 8%)
+  );
+}
+
+.funnel-mesh-bg-light {
+  background: linear-gradient(
+    -45deg,
+    hsl(210 20% 96%),
+    hsl(207 30% 92%),
+    hsl(162 20% 94%),
+    hsl(210 20% 96%)
+  );
+}
+
+.clinical-hero-bg {
+  background-color: hsl(220 22% 14%);
+}
+
+.clinical-cta-bg {
+  background-color: hsl(220 22% 14%);
+}
+
+.glass-card {
+  background: rgba(28, 39, 58, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
+.glass-card-light {
+  background: hsl(var(--card));
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.dark .glass-card-light {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.03);
+}
+
+.clinical-glass {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--card-border) / .9);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.dark .clinical-glass,
+.clinical-dark-page .clinical-glass {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.clinical-dark-page .clinical-glass [class*="text-muted-foreground"],
+.clinical-dark-page .clinical-glass [class*="text-foreground"] {
+  color: inherit;
+}
+
+.clinical-dark-page {
+  color: hsl(var(--foreground));
+  --button-outline: rgba(255,255,255, .08);
+  --badge-outline: rgba(255,255,255, .05);
+  --opaque-button-border-intensity: 8;
+  --elevate-1: rgba(255,255,255, .04);
+  --elevate-2: rgba(255,255,255, .09);
+  --background: 220 22% 14%;
+  --foreground: 210 5% 95%;
+  --border: 220 22% 24%;
+  --card: 220 22% 17%;
+  --card-foreground: 210 5% 95%;
+  --card-border: 220 22% 20%;
+  --popover: 220 22% 19%;
+  --popover-foreground: 210 5% 95%;
+  --popover-border: 220 22% 24%;
+  --primary: 215 45% 62%;
+  --primary-foreground: 210 5% 98%;
+  --secondary: 217 25% 18%;
+  --secondary-foreground: 210 5% 92%;
+  --muted: 217 25% 16%;
+  --muted-foreground: 215 15% 65%;
+  --accent: 217 30% 18%;
+  --accent-foreground: 210 5% 92%;
+  --destructive: 0 72% 45%;
+  --destructive-foreground: 0 5% 98%;
+  --input: 217 25% 28%;
+  --ring: 215 45% 62%;
+
+  --primary-border: hsl(215 45% 62%);
+  --secondary-border: hsl(217 25% 18%);
+  --muted-border: hsl(217 25% 16%);
+  --accent-border: hsl(217 30% 18%);
+  --destructive-border: hsl(0 72% 45%);
+
+  --sidebar-background: 222 47% 11%;
+  --sidebar-foreground: 210 5% 95%;
+  --sidebar-primary: 215 45% 62%;
+  --sidebar-primary-foreground: 210 5% 98%;
+  --sidebar-accent: 217 30% 18%;
+  --sidebar-accent-foreground: 210 5% 92%;
+  --sidebar-border: 217 30% 18%;
+  --sidebar-ring: 215 45% 62%;
+
+  --chart-1: 215 45% 62%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 30 80% 55%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 340 75% 55%;
+}
+
+.clinical-section-alt {
+  background-color: hsl(220 22% 17%);
+}
+
+.clinical-card-dark {
+  background: rgba(28, 39, 58, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+/* Shared patient-facing surface: substantial without decorative light effects. */
+.concordia-card {
+  border-radius: 1.25rem;
+  border-color: hsl(var(--card-border) / .92);
+  box-shadow: 0 8px 22px hsl(220 25% 4% / .16);
+}
+
+.concordia-card:hover {
+  box-shadow: 0 12px 30px hsl(220 25% 4% / .22);
+}
+
+/* Public-site alignment system. Keep patient-facing sections on one readable
+   measure so their centerlines, gutters, and card grids agree across pages. */
+.concordia-container {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.concordia-container-wide {
+  width: min(100% - 2rem, 80rem);
+  margin-inline: auto;
+}
+
+.concordia-section {
+  padding-block: 4.5rem;
+}
+
+.concordia-section-heading {
+  max-width: 38rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.concordia-card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.concordia-card-grid > * {
+  min-width: 0;
+}
+
+.concordia-card-grid .concordia-card,
+.concordia-card-grid .clinical-glass {
+  height: 100%;
+}
+
+.concordia-split {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .concordia-container,
+  .concordia-container-wide {
+    width: min(100% - 3rem, 72rem);
+  }
+
+  .concordia-container-wide {
+    max-width: 80rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .concordia-section {
+    padding-block: 5rem;
+  }
+
+  .concordia-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .concordia-split {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .concordia-card-grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .concordia-section-heading {
+    text-align: left;
+    margin-inline: 0;
+  }
+}
+
+.surface-lift {
+  border-radius: 1.25rem;
+  border: 1px solid hsl(var(--border) / .82);
+  box-shadow: 0 8px 22px hsl(220 25% 4% / .18);
+}
+
+.laser-input:focus-within {
+  position: relative;
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 1px hsl(var(--primary) / 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-up {
+    animation: none !important;
+  }
+}
+
+/* Concordia's patient-facing surfaces use quiet, clinical depth.
+   Keep motion and focus feedback, but remove decorative light effects. */
+.glow-border::before,
+.glow-border::after,
+.glow-border-subtle::before,
+.glow-border-subtle::after,
+.neon-divider {
+  display: none;
+}
+
+[class*="backdrop-blur"] {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.shimmer-cta::before,
+.motion-btn::before {
+  display: none !important;
+}
+
+.glow-gold,
+.glow-red-pulse {
+  animation: none !important;
+  box-shadow: none !important;
+}
+
+.header-glow:hover,
+.header-glow:active {
+  box-shadow: none !important;
+  border-color: hsl(var(--border)) !important;
+}
+
+.vitality-glow {
+  text-shadow: none;
+}
+
+.vitality-glow-soft {
+  color: hsl(var(--primary));
+  text-shadow: none;
+}
+
+.admin-command-center {
+  --background: 220 15% 8%;
+  --foreground: 210 5% 92%;
+  --card: 220 12% 12%;
+  --card-foreground: 210 5% 92%;
+  --card-border: 220 10% 18%;
+  --border: 220 10% 18%;
+  --muted: 220 10% 15%;
+  --muted-foreground: 210 5% 65%;
+  --popover: 220 12% 14%;
+  --popover-foreground: 210 5% 92%;
+  --popover-border: 220 10% 20%;
+  --accent: 220 12% 16%;
+  --accent-foreground: 210 5% 90%;
+  --primary: 215 45% 58%;
+  --primary-foreground: 210 5% 98%;
+  --secondary: 220 10% 18%;
+  --secondary-foreground: 210 5% 88%;
+  --destructive: 0 72% 45%;
+  --destructive-foreground: 0 5% 98%;
+  --input: 220 8% 30%;
+  --ring: 215 45% 58%;
+  color-scheme: dark;
+}
+
+/* Desktop admin workspace: dense, clinical operations UI. Scoped deliberately
+   so public and mobile card layouts retain their existing visual language. */
+.admin-workspace {
+  --admin-slate: 222 31% 16%;
+  --admin-slate-deep: 222 35% 12%;
+  --admin-canvas: 210 24% 96%;
+  --admin-paper: 0 0% 99%;
+  --admin-line: 214 20% 86%;
+  --admin-ink: 222 28% 19%;
+  --admin-muted: 215 14% 44%;
+  --admin-accent: 174 68% 34%;
+  --admin-accent-soft: 174 42% 93%;
+  --admin-warm: 11 72% 48%;
+  background: hsl(var(--admin-canvas));
+  color: hsl(var(--admin-ink));
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.admin-topbar {
+  background: hsl(0 0% 100%);
+  border-color: hsl(var(--admin-line));
+}
+
+.admin-topbar-kicker,
+.admin-sidebar-subtitle,
+.admin-sidebar-label {
+  font-family: inherit;
+}
+
+.admin-topbar-kicker {
+  color: hsl(var(--admin-muted));
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.admin-canvas {
+  background: hsl(var(--admin-canvas));
+}
+
+.admin-content-frame {
+  width: min(100%, 116rem);
+  margin-inline: auto;
+}
+
+.admin-sidebar {
+  --sidebar: 222 35% 15%;
+  --sidebar-foreground: 210 24% 92%;
+  --sidebar-border: 222 25% 24%;
+  --sidebar-accent: 222 27% 22%;
+  --sidebar-accent-foreground: 210 25% 98%;
+  background: hsl(var(--sidebar));
+  border-color: hsl(var(--sidebar-border));
+  color: hsl(var(--sidebar-foreground));
+}
+
+.admin-sidebar-header {
+  background: hsl(var(--sidebar));
+  border-color: hsl(var(--sidebar-border));
+}
+
+.admin-sidebar-header img {
+  filter: none;
+  opacity: 1;
+}
+
+.admin-sidebar-subtitle {
+  color: hsl(210 18% 75%);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.admin-sidebar-group {
+  padding: 14px 10px 0;
+}
+
+.admin-sidebar-label {
+  color: hsl(210 18% 73%);
+  font-size: 11px;
+  font-weight: 700;
+  height: 28px;
+  padding-inline: 10px;
+}
+
+.admin-sidebar-item {
+  border-left: 3px solid transparent;
+  border-radius: 6px;
+  color: hsl(210 22% 88%);
+  font-size: 14px;
+  min-height: 40px;
+  padding-inline: 10px;
+}
+
+.admin-sidebar-item:hover {
+  background: hsl(var(--sidebar-accent));
+  color: hsl(var(--sidebar-accent-foreground));
+}
+
+.admin-sidebar-item[data-active="true"] {
+  background: hsl(174 42% 93%);
+  border-left-color: hsl(174 68% 34%);
+  color: hsl(222 35% 16%);
+  font-weight: 600;
+}
+
+.admin-count-badge {
+  border: 0;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 22px;
+  padding-inline: 5px;
+  text-align: center;
+}
+
+.admin-sidebar-footer {
+  border-color: hsl(222 25% 24%);
+}
+
+.admin-dashboard-shell {
+  max-width: 1440px;
+}
+
+.admin-eyebrow {
+  color: hsl(var(--admin-accent));
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.admin-dashboard-shell .admin-stat-card {
+  border: 1px solid hsl(var(--admin-line));
+  border-radius: 10px;
+  background: hsl(0 0% 100%);
+  box-shadow: 0 2px 8px hsl(222 35% 18% / .05);
+  min-height: 142px;
+}
+
+/* Keep the admin's dense pages readable without changing the public site. */
+.admin-content-frame {
+  min-width: 0;
+}
+
+.admin-workspace .admin-canvas h1,
+.admin-workspace .admin-canvas h2,
+.admin-workspace .admin-canvas h3 {
+  font-family: inherit;
+  letter-spacing: -.02em;
+  line-height: 1.3;
+}
+
+.admin-workspace .admin-canvas h1 {
+  font-size: clamp(1.5rem, 2vw, 1.875rem);
+  font-weight: 700;
+}
+
+.admin-workspace .admin-canvas label,
+.admin-workspace .admin-canvas th {
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.admin-workspace .admin-canvas :is(input, textarea, select) {
+  font-family: inherit;
+}
+
+.admin-workspace .admin-canvas :is([data-slot="card"], .admin-stat-card) {
+  background: white;
+}
+
+@media (max-width: 767px) {
+  .admin-sidebar-item {
+    font-size: 15px;
+    min-height: 44px;
+  }
+
+  .admin-sidebar-group {
+    padding-top: 16px;
+  }
+}
+
+.admin-page-shell {
+  width: min(100%, 112rem);
+  margin-inline: auto;
+}
+
+.admin-table-workspace h1 {
+  letter-spacing: -.02em;
+}
+
+.admin-table-workspace > .card,
+.admin-table-workspace > [class*="rounded"] {
+  border-color: hsl(var(--admin-line));
+  border-radius: 3px;
+  box-shadow: 0 1px 2px hsl(220 25% 20% / .04);
+}
+
+.admin-table-card {
+  border-color: hsl(var(--admin-line));
+  border-radius: 3px;
+}
+
+.admin-table-frame {
+  background: hsl(var(--admin-paper));
+  border-color: hsl(var(--admin-line));
+  border-radius: 3px;
+  overflow-x: auto;
+}
+
+.admin-dense-table {
+  font-size: 12px;
+  min-width: 760px;
+}
+
+.admin-dense-table thead tr {
+  background: hsl(214 24% 94%);
+  border-bottom-color: hsl(214 20% 82%);
+}
+
+.admin-dense-table th {
+  color: hsl(var(--admin-muted));
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.admin-dense-table td {
+  border-bottom-color: hsl(214 20% 91%);
+  padding: 8px 12px;
+  vertical-align: middle;
+}
+
+.admin-dense-table tbody tr {
+  height: 48px;
+}
+
+.admin-dense-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.admin-dense-table tbody tr:hover {
+  background: hsl(205 60% 97%);
+}
+
+.admin-mono {
+  font-family: var(--font-mono);
+  font-size: .92em;
+  letter-spacing: .01em;
+}
+
+@media (min-width: 768px) {
+  .admin-content-frame > .admin-page-shell {
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .admin-workspace .admin-content-frame {
+    width: 100%;
+  }
+
+  /* Desktop density pass deliberately stops before mobile/card layouts. */
+  .admin-table-workspace .admin-table-frame {
+    background: transparent;
+    border-color: inherit;
+    border-radius: .375rem;
+  }
+
+  .admin-table-workspace .admin-dense-table {
+    font-size: inherit;
+    min-width: 0;
+  }
+
+  .admin-table-workspace .admin-dense-table th,
+  .admin-table-workspace .admin-dense-table td {
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    padding: .5rem .75rem;
+    text-transform: none;
+  }
+
+  .admin-table-workspace .admin-dense-table tbody tr {
+    height: auto;
+  }
+}
+
+.header-glow {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 0 0 0 transparent, inset 0 0 0 0 transparent;
+}
+
+.header-glow:hover {
+  box-shadow: none;
+  border-color: hsl(var(--border)) !important;
+}
+
+.header-glow:active {
+  box-shadow: none;
+  border-color: hsl(var(--border)) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-glow {
+    transition: none;
+  }
+  .header-glow:hover {
+    box-shadow: none;
+    border-color: hsl(var(--border)) !important;
+  }
+  .header-glow:active {
+    box-shadow: none;
+    border-color: hsl(var(--border)) !important;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    transition: background-color 300ms ease, color 200ms ease, border-color 300ms ease;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted) / 0.3);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.25);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.4);
+  }
+
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    transition: box-shadow 150ms ease, border-color 150ms ease;
+  }
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(100%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.06;
+  }
+  90% {
+    opacity: 0.06;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-up {
+  animation: float-up linear infinite;
+}
+
+/**
+ * Using the elevate system.
+ * Automatic contrast adjustment.
+ *
+ * <element className="hover-elevate" />
+ * <element className="active-elevate-2" />
+ *
+ * // Using the tailwind utility when a data attribute is "on"
+ * <element className="toggle-elevate data-[state=on]:toggle-elevated" />
+ * // Or manually controlling the toggle state
+ * <element className="toggle-elevate toggle-elevated" />
+ *
+ * Elevation systems have to handle many states.
+ * - not-hovered, vs. hovered vs. active  (three mutually exclusive states)
+ * - toggled or not
+ * - focused or not (this is not handled with these utilities)
+ *
+ * Even without handling focused or not, this is six possible combinations that
+ * need to be distinguished from eachother visually.
+ */
+@layer utilities {
+
+  /* Hide scrollbar while keeping scroll functionality (snap carousels, etc.) */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide ugly search cancel button in Chrome until we can style it properly */
+  input[type="search"]::-webkit-search-cancel-button {
+    @apply hidden;
+  }
+
+  /* Placeholder styling for contentEditable div */
+  [contenteditable][data-placeholder]:empty::before {
+    content: attr(data-placeholder);
+    color: hsl(var(--muted-foreground));
+    pointer-events: none;
+  }
+
+  /* .no-default-hover-elevate/no-default-active-elevate is an escape hatch so consumers of
+   * buttons/badges can remove the automatic brightness adjustment on interactions
+   * and program their own. */
+  .no-default-hover-elevate {}
+
+  .no-default-active-elevate {}
+
+
+  /**
+   * Toggleable backgrounds go behind the content. Hoverable/active goes on top.
+   * This way they can stack/compound. Both will overlap the parent's borders!
+   * So borders will be automatically adjusted both on toggle, and hover/active,
+   * and they will be compounded.
+   */
+  .toggle-elevate::before,
+  .toggle-elevate-2::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0px;
+    /*border-radius: inherit;   match rounded corners */
+    border-radius: inherit;
+    z-index: -1;
+    /* sits behind content but above backdrop */
+  }
+
+  .toggle-elevate.toggle-elevated::before {
+    background-color: var(--elevate-2);
+  }
+
+  /* If there's a 1px border, adjust the inset so that it covers that parent's border */
+  .border.toggle-elevate::before {
+    inset: -1px;
+  }
+
+  /* Does not work on elements with overflow:hidden! */
+  .hover-elevate:not(.no-default-hover-elevate),
+  .active-elevate:not(.no-default-active-elevate),
+  .hover-elevate-2:not(.no-default-hover-elevate),
+  .active-elevate-2:not(.no-default-active-elevate) {
+    position: relative;
+    z-index: 0;
+  }
+
+  .hover-elevate:not(.no-default-hover-elevate)::after,
+  .active-elevate:not(.no-default-active-elevate)::after,
+  .hover-elevate-2:not(.no-default-hover-elevate)::after,
+  .active-elevate-2:not(.no-default-active-elevate)::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0px;
+    border-radius: inherit;
+    z-index: 999;
+    transition: background-color 200ms ease;
+  }
+
+  .hover-elevate:hover:not(.no-default-hover-elevate)::after,
+  .active-elevate:active:not(.no-default-active-elevate)::after {
+    background-color: var(--elevate-1);
+  }
+
+  .hover-elevate-2:hover:not(.no-default-hover-elevate)::after,
+  .active-elevate-2:active:not(.no-default-active-elevate)::after {
+    background-color: var(--elevate-2);
+  }
+
+  /* If there's a 1px border, adjust the inset so that it covers that parent's border */
+  .border.hover-elevate:not(.no-hover-interaction-elevate)::after,
+  .border.active-elevate:not(.no-active-interaction-elevate)::after,
+  .border.hover-elevate-2:not(.no-hover-interaction-elevate)::after,
+  .border.active-elevate-2:not(.no-active-interaction-elevate)::after,
+  .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
+    inset: -1px;
+  }
+}
+
+.motion-btn {
+  position: relative;
+}
+
+.motion-btn::before {
+  display: none;
+}
+
+.motion-btn:hover::before {
+  display: none;
+}
+
+/* Primary buttons use quiet color-only feedback, including asChild links. */
+.button-primary.bg-primary {
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.button-primary.bg-primary::after {
+  content: none;
+}
+
+.button-primary.bg-primary:is(:hover, :focus-visible):not(:disabled):not([aria-disabled="true"]) {
+  background-color: hsl(0 0% 100%) !important;
+  border-color: hsl(215 55% 35%) !important;
+  color: hsl(215 55% 35%) !important;
+}
+
+.button-primary.bg-primary:is(:hover, :focus-visible):not(:disabled):not([aria-disabled="true"]) * {
+  color: inherit !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button-primary.bg-primary {
+    transition: none;
+  }
+}
+
+/* Flu-shot booking is intentionally a document-scrolling flow. Keep the
+   success state in normal layout rather than creating a second fixed scroll
+   container, and make long patient-entered values safe at every width. */
+.schedule-flu-shot-page {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.schedule-flu-shot-page button,
+.schedule-flu-shot-page a {
+  max-width: 100%;
+}
+
+/* Specialty pharmacy visual trial.
+   Intentionally scoped to the public specialty route so the shared shell and
+   every other page keep their existing visual language. */
+.specialty-light-page {
+  --specialty-ink: 213 35% 18%;
+  --specialty-muted: 213 18% 39%;
+  --specialty-line: 205 24% 86%;
+  --specialty-paper: 204 35% 97%;
+  --specialty-blue: 205 64% 35%;
+  --specialty-mint: 158 43% 31%;
+  color: hsl(var(--specialty-ink));
+  background: hsl(var(--specialty-paper)) !important;
+}
+
+.specialty-light-page .specialty-hero-wash {
+  background: hsl(202 55% 94% / .62);
+  border-bottom: 1px solid hsl(205 28% 87%);
+}
+
+.specialty-light-page > section {
+  border-color: hsl(var(--specialty-line)) !important;
+}
+
+.specialty-light-page .clinical-section-alt,
+.specialty-light-page section[id="medication-vault"] {
+  background: hsl(204 35% 97%) !important;
+}
+
+.specialty-light-page section:first-of-type {
+  background: hsl(202 55% 94%);
+}
+
+.specialty-light-page h1,
+.specialty-light-page h2,
+.specialty-light-page h3,
+.specialty-light-page h4,
+.specialty-light-page h5,
+.specialty-light-page .text-white {
+  color: hsl(var(--specialty-ink)) !important;
+}
+
+.specialty-light-page .text-slate-200,
+.specialty-light-page .text-slate-300,
+.specialty-light-page .text-slate-400,
+.specialty-light-page .text-slate-500 {
+  color: hsl(var(--specialty-muted)) !important;
+}
+
+.specialty-light-page .text-primary,
+.specialty-light-page .text-primary\/70 {
+  color: hsl(var(--specialty-blue)) !important;
+}
+
+.specialty-light-page .clinical-card-dark,
+.specialty-light-page .specialty-light-page .card,
+.specialty-light-page [data-testid^="card-cta-"],
+.specialty-light-page [data-testid^="card-biopharma-"],
+.specialty-light-page [data-testid^="card-support-"] {
+  background: hsl(0 0% 100% / .72) !important;
+  border: 1px solid hsl(var(--specialty-line)) !important;
+  box-shadow: 0 8px 24px hsl(213 34% 20% / .06) !important;
+}
+
+.specialty-light-page .clinical-card-dark:hover,
+.specialty-light-page [data-testid^="card-cta-"]:hover,
+.specialty-light-page [data-testid^="card-biopharma-"]:hover,
+.specialty-light-page [data-testid^="card-support-"]:hover {
+  box-shadow: 0 12px 28px hsl(213 34% 20% / .1) !important;
+}
+
+.specialty-light-page input,
+.specialty-light-page textarea,
+.specialty-light-page [role="combobox"] {
+  background: hsl(0 0% 100% / .88) !important;
+  border-color: hsl(205 24% 79%) !important;
+  color: hsl(var(--specialty-ink)) !important;
+}
+
+.specialty-light-page input::placeholder,
+.specialty-light-page textarea::placeholder {
+  color: hsl(213 14% 48%) !important;
+}
+
+.specialty-light-page .bg-white\/5,
+.specialty-light-page .bg-white\/\[0\.02\],
+.specialty-light-page .bg-white\/\[0\.03\] {
+  background: hsl(0 0% 100% / .62) !important;
+}
+
+.specialty-light-page .border-white\/5,
+.specialty-light-page .border-white\/8,
+.specialty-light-page .border-white\/10,
+.specialty-light-page .border-white\/\[0\.06\] {
+  border-color: hsl(var(--specialty-line)) !important;
+}
+
+.specialty-light-page .bg-primary\/10 {
+  background: hsl(198 58% 89%) !important;
+}
+
+.specialty-light-page .bg-emerald-500\/10 {
+  background: hsl(158 46% 88%) !important;
+}
+
+.specialty-light-page .bg-violet-500\/10,
+.specialty-light-page .bg-purple-500\/10 {
+  background: hsl(274 48% 92%) !important;
+}
+
+.specialty-light-page .text-emerald-400 {
+  color: hsl(158 49% 29%) !important;
+}
+
+.specialty-light-page .text-purple-400,
+.specialty-light-page .text-violet-400 {
+  color: hsl(274 47% 39%) !important;
+}
+
+.specialty-light-page .text-cyan-400 {
+  color: hsl(193 67% 30%) !important;
+}
+
+.specialty-light-page .text-amber-400 {
+  color: hsl(32 75% 34%) !important;
+}
+
+.specialty-light-page .text-red-400,
+.specialty-light-page .text-rose-400 {
+  color: hsl(350 59% 36%) !important;
+}
+
+.specialty-light-page .bg-green-500\/10 {
+  background: hsl(151 45% 88%) !important;
+}
+
+.specialty-light-page .border-green-500\/30 {
+  border-color: hsl(151 38% 65%) !important;
+}
+
+.specialty-light-page .text-green-400 {
+  color: hsl(151 49% 29%) !important;
+}
+
+.specialty-light-page .bg-red-500\/5 {
+  background: hsl(350 70% 96%) !important;
+}
+
+.specialty-light-page .border-red-500\/30 {
+  border-color: hsl(350 46% 75%) !important;
+}
+
+.specialty-light-page .text-red-300,
+.specialty-light-page .text-red-400 {
+  color: hsl(350 59% 36%) !important;
+}
+
+.specialty-light-page .fixed.inset-0.bg-slate-950\/80 {
+  background: hsl(213 35% 18% / .18) !important;
+}
+
+.specialty-light-page .rounded-full.bg-primary {
+  animation: none !important;
+  opacity: .35 !important;
+}
+
+.specialty-light-page [data-testid="dialog-med-detail"],
+.specialty-light-page [data-testid="dialog-med-detail"] + *,
+.specialty-light-page [role="dialog"] {
+  background: hsl(0 0% 100%) !important;
+  border-color: hsl(var(--specialty-line)) !important;
+  color: hsl(var(--specialty-ink)) !important;
+}
+
+.specialty-dialog .text-white,
+.specialty-dialog .text-slate-200,
+.specialty-dialog .text-slate-300,
+.specialty-dialog .text-slate-400,
+.specialty-dialog .text-slate-500 {
+  color: hsl(var(--specialty-muted)) !important;
+}
+
+.specialty-dialog {
+  --specialty-ink: 213 35% 18%;
+  --specialty-muted: 213 18% 39%;
+  --specialty-line: 205 24% 86%;
+}
+
+.specialty-dialog .text-white {
+  color: hsl(var(--specialty-ink)) !important;
+}
+
+.specialty-dialog input,
+.specialty-dialog textarea,
+.specialty-dialog [role="combobox"] {
+  background: hsl(204 35% 97%) !important;
+  border-color: hsl(205 24% 79%) !important;
+  color: hsl(var(--specialty-ink)) !important;
+}
+
+@media (max-width: 767px) {
+  .specialty-light-page section {
+    overflow-x: hidden;
+  }
+
+  .specialty-light-page h1 {
+    font-size: clamp(2.25rem, 11vw, 3.5rem);
+    line-height: 1.08;
+  }
+
+  .specialty-light-page .grid {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .schedule-flu-shot-page header .container {
+    min-width: 0;
+  }
+
+  .schedule-flu-shot-page header .container > * {
+    min-width: 0;
+  }
+
+  .schedule-flu-shot-page header span {
+    overflow-wrap: anywhere;
+  }
+}
+
+.shimmer-cta {
+  position: relative;
+  display: inline-block;
+}
+.shimmer-cta::before {
+  display: none;
+}
+.shimmer-cta:hover::before {
+  display: none;
+}
+
+/* Final safeguard against decorative light effects from legacy utility names. */
+.glow-border::before,
+.glow-border::after,
+.glow-border-subtle::before,
+.glow-border-subtle::after,
+.shimmer-cta::before,
+.motion-btn::before {
+  content: none !important;
+  display: none !important;
+}
+
+.glow-gold,
+.glow-red-pulse,
+.header-glow,
+.header-glow:hover,
+.header-glow:active,
+.vitality-glow,
+.vitality-glow-soft {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-btn::before {
+    display: none;
+  }
+  .shimmer-cta::before {
+    display: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

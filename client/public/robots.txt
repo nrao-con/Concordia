@@ -1,0 +1,45 @@
+User-agent: *
+Allow: /
+
+# Keep admin panel and API routes out of search indexes
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
+Disallow: /staff
+Disallow: /staff/
+
+# No need to index authenticated-only flows
+Disallow: /cart
+Disallow: /checkout
+Disallow: /express-checkout
+Disallow: /my-tickets
+
+# AI crawler explicit access — allow all public content
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://concordianyc.com/sitemap.xml

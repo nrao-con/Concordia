@@ -1,0 +1,2201 @@
+{
+  "description": "Source export, not a certified AWS deployment",
+  "excludes": [
+    "secret values",
+    "database contents",
+    "unreferenced user attachments",
+    "patient uploads",
+    "node_modules",
+    "compiled bundles",
+    "Git history",
+    "private agent context",
+    "remote object storage and Staff image files"
+  ],
+  "files": [
+    {
+      "path": ".env.aws.example",
+      "bytes": 1423,
+      "sha256": "26164a167973004248f86b7838e693083218c900cb578495d52118b984138368"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 90,
+      "sha256": "5cb03998317805ff854fec86edce5c3ff2212bd91537c43e51f7bf08ccbf95ba"
+    },
+    {
+      "path": "API_DOCUMENTATION.md",
+      "bytes": 62393,
+      "sha256": "076bcd7007ff8ef9dbf93034767547fe3b5ce7b8ac3e5db5b145742ff12dfd7e"
+    },
+    {
+      "path": "CONCORDIA_INTEGRATION.md",
+      "bytes": 5775,
+      "sha256": "d60c205505035bb4d28234de73760f55c3609a0cdba4f5628afe3d4f97c90b76"
+    },
+    {
+      "path": "attached_assets/concordia_c_icon.png",
+      "bytes": 59383,
+      "sha256": "b9664df29b70e85b8fe83de088c7bfeec4d59489d640e8db6684f8ce3cae036b"
+    },
+    {
+      "path": "attached_assets/concordia_logo_trimmed_transparent.png",
+      "bytes": 192563,
+      "sha256": "0e907fffd9443a22cfd18fb53213d852123f0da74f1ff4c33973b232c8ae1ed1"
+    },
+    {
+      "path": "attached_assets/generated_images/blister_pack_organizer.png",
+      "bytes": 1261635,
+      "sha256": "b690f411e5f74b376aa353bee6411e16de4633ffde10d7d9ca74b416f042bb0c"
+    },
+    {
+      "path": "attached_assets/generated_images/blister_pack_organizer.webp",
+      "bytes": 68388,
+      "sha256": "a039888d9d024c6b8fc2ef5f955fdc8c0bde3eb74d9968fd4aa55a01f8f6cfcb"
+    },
+    {
+      "path": "attached_assets/generated_images/diverse_pharmacy_customers_illustration.png",
+      "bytes": 1145684,
+      "sha256": "bc49e1e99b6152e0b8b7be01814603070449bf5525017b9bbfeea43917427783"
+    },
+    {
+      "path": "attached_assets/generated_images/family_receiving_transferred_prescriptions.png",
+      "bytes": 1328772,
+      "sha256": "342354f5c658d266c3138ae619c7e1b5eccf53663d0b5df0d9adcfb7003a278c"
+    },
+    {
+      "path": "attached_assets/generated_images/family_receiving_transferred_prescriptions.webp",
+      "bytes": 80926,
+      "sha256": "b9f82c7130c6dfa5ec15c9b941e1f753e2a26b0aa038ba710fc19d51582d1460"
+    },
+    {
+      "path": "attached_assets/generated_images/flu_shot_real_family.png",
+      "bytes": 1477727,
+      "sha256": "b8239dd9c315014a3be80a7ac2cfc3edc98c8fda1690d5024a9ac5e65416656f"
+    },
+    {
+      "path": "attached_assets/generated_images/hero_app_user.png",
+      "bytes": 1422663,
+      "sha256": "b5f80f2f81dfaf2b47d04a4ae17d3ff028410712935074643b669e4de2c82b32"
+    },
+    {
+      "path": "attached_assets/generated_images/hero_filling_vial.png",
+      "bytes": 1242178,
+      "sha256": "cf561f961950051ddd3dab6c5b5f51b9c6b33d791e1ec5dec84afac8ca0379ee"
+    },
+    {
+      "path": "attached_assets/generated_images/hero_real_pharmacy_customers.png",
+      "bytes": 1536886,
+      "sha256": "3bc4d80537943f281139469d6e62faf0c929faa6379895ad74c0720525086526"
+    },
+    {
+      "path": "attached_assets/generated_images/multigenerational_family_pharmacy_visit.png",
+      "bytes": 1086211,
+      "sha256": "4700a5d83cfd102bd766c897863aee2e0e20facb522a24e8380c0e0ee79f8774"
+    },
+    {
+      "path": "attached_assets/generated_images/otc_allergy_relief_modern.png",
+      "bytes": 342011,
+      "sha256": "7932bb6a4ef15938f3be4887a158b0d76fc03f57d38b8d70e4a492458cf6583b"
+    },
+    {
+      "path": "attached_assets/generated_images/otc_first_aid_modern.png",
+      "bytes": 356984,
+      "sha256": "3fb9bcad982e9231cfe7c757401d0cf248b3e13894a8589c824f2001a70d3a47"
+    },
+    {
+      "path": "attached_assets/generated_images/otc_pain_relief_modern.png",
+      "bytes": 301000,
+      "sha256": "fa17114ec11eeee10b0cbfe2da95d5d10669f967c96840239d69c6c81c7ce116"
+    },
+    {
+      "path": "attached_assets/generated_images/otc_vitamins_modern.png",
+      "bytes": 319471,
+      "sha256": "e882891c67cadc203d282514234e3bdff39b18c5b4da3defb5f2f88b63653458"
+    },
+    {
+      "path": "attached_assets/generated_images/person_with_blister_pack.png",
+      "bytes": 1482777,
+      "sha256": "846e595011071442bd7583999d5ba51ee8dd70517919d5e220b3afb519596bf5"
+    },
+    {
+      "path": "attached_assets/generated_images/person_with_blister_pack.webp",
+      "bytes": 106680,
+      "sha256": "d81008f1bad719426c6c271375b0ed7a79855a28a3193ec019eee92221ec7c4c"
+    },
+    {
+      "path": "attached_assets/generated_images/pharmacist_helping_diverse_customers.png",
+      "bytes": 956659,
+      "sha256": "6419d2f27971322f0b0c8afbda5141c5366dcecec2de6c1256dad22f1ff52d14"
+    },
+    {
+      "path": "attached_assets/generated_images/pharmacist_helping_diverse_customers.webp",
+      "bytes": 60326,
+      "sha256": "4b4c55844b7f5fe276476bc82f6ac6d125773e1c0cb5449a9bae37d407736e7b"
+    },
+    {
+      "path": "attached_assets/generated_images/pharmacist_helping_patient.png",
+      "bytes": 1180595,
+      "sha256": "096ea18e3d59eb70763c82a83d7fe1af080149b8b3d5f605c374f211c7ab2dfd"
+    },
+    {
+      "path": "attached_assets/generated_images/pharmacist_helping_patient.webp",
+      "bytes": 51446,
+      "sha256": "145f43ae6546736dcaf2d8c4adf84f5ddcd77301b1bb9212957c889b6e4a1a26"
+    },
+    {
+      "path": "attached_assets/generated_images/pharmacist_helping_patient_transfer_prescriptions.png",
+      "bytes": 1229912,
+      "sha256": "7178e7eaef5ff07f3533a14510869af91738db51c0a43d712c3c0b39c6c7c2e3"
+    },
+    {
+      "path": "attached_assets/generated_images/pharmacist_helping_patient_transfer_prescriptions.webp",
+      "bytes": 64018,
+      "sha256": "484912367a5786aab55622937c673490600320e6f3cb22fc88045d41ffba5e14"
+    },
+    {
+      "path": "attached_assets/generated_images/pharmacist_transferring_prescriptions_by_phone.png",
+      "bytes": 1153362,
+      "sha256": "aff59dbcfa2c5177b45d6a5b1fa6516e15cf40fef15a776d13e03a59ae822fe3"
+    },
+    {
+      "path": "attached_assets/generated_images/pharmacist_transferring_prescriptions_by_phone.webp",
+      "bytes": 47462,
+      "sha256": "948fbd43fe4f7833469652144b30e44bf49fb9b97956e17a5832d6307f0fa0b8"
+    },
+    {
+      "path": "attached_assets/stock_images/allergy_relief_medic_16c3ea2a.jpg",
+      "bytes": 78912,
+      "sha256": "812f104068674ed2ceef94a1707fc11bb28fff1771faaab0d0f22320b5a8ecb2"
+    },
+    {
+      "path": "attached_assets/stock_images/cough_syrup_cold_med_ad3388ec.jpg",
+      "bytes": 297498,
+      "sha256": "7a6a19e813f36c1caf79ef1efb699f07d5ea919e9c21a7bfa78cdeae274e07ec"
+    },
+    {
+      "path": "attached_assets/stock_images/first_aid_kit_medica_eea4f851.jpg",
+      "bytes": 254909,
+      "sha256": "9a2ee65e27391957869cba1275dcc5013b703bd922b968e2c3b52f57ad11b6e3"
+    },
+    {
+      "path": "attached_assets/stock_images/happy_diverse_family_0a2f5529.jpg",
+      "bytes": 373804,
+      "sha256": "0f6afad9ef9abfc5ecb98869eda75bbec4a2a2be7d7ad1522d30f1ff7f7cb4a0"
+    },
+    {
+      "path": "attached_assets/stock_images/melatonin_sleep_aid__eb81c934.jpg",
+      "bytes": 159857,
+      "sha256": "58dab2283986edb8573d143d8bcafdbc7354949604f8002bd267e315638a36c0"
+    },
+    {
+      "path": "attached_assets/stock_images/modern_pharmacy_stor_3f38dcb5.jpg",
+      "bytes": 156662,
+      "sha256": "a89e825bffd43733afb8a4ebda5cf3717cd83e2f38f174f6def3fc38590c1f1f"
+    },
+    {
+      "path": "attached_assets/stock_images/omega_3_fish_oil_sup_5431be93.jpg",
+      "bytes": 89099,
+      "sha256": "93c944b724b15fd6458450c42ee8b66321cd1155351e655ee8db4298c3a8edc1"
+    },
+    {
+      "path": "attached_assets/stock_images/over_the_counter_med_257b83a4.jpg",
+      "bytes": 472997,
+      "sha256": "c336b35817343416f91aaefbebe579d418712826166a63fd37de9753a54bb141"
+    },
+    {
+      "path": "attached_assets/stock_images/over_the_counter_med_41db54c2.jpg",
+      "bytes": 343272,
+      "sha256": "31b9cb0210ab529741222639295545a4d0a651fdf26d13b7ce3bf722427647fd"
+    },
+    {
+      "path": "attached_assets/stock_images/over_the_counter_med_4a89198a.jpg",
+      "bytes": 242287,
+      "sha256": "2b3601b4b0b13b5df6dabc7dd575af9032ba2a804af4c9cee7f91ff6130ca43f"
+    },
+    {
+      "path": "attached_assets/stock_images/over_the_counter_med_9c0751ff.jpg",
+      "bytes": 242287,
+      "sha256": "2b3601b4b0b13b5df6dabc7dd575af9032ba2a804af4c9cee7f91ff6130ca43f"
+    },
+    {
+      "path": "attached_assets/stock_images/pain_relief_medicine_5a19b7ae.jpg",
+      "bytes": 135146,
+      "sha256": "c45fd1be7a2abd796635e2a9f95e63d2069b81872c6395dadcfea0a0310c327f"
+    },
+    {
+      "path": "attached_assets/stock_images/pharmacist_helping_c_e7df6642.jpg",
+      "bytes": 167641,
+      "sha256": "ca4216620bbcd88b55bb3f432ef3ff809011745361dc9a38b7e2978a9f699f9d"
+    },
+    {
+      "path": "attached_assets/stock_images/professional_modern__c77be304.jpg",
+      "bytes": 156662,
+      "sha256": "a89e825bffd43733afb8a4ebda5cf3717cd83e2f38f174f6def3fc38590c1f1f"
+    },
+    {
+      "path": "attached_assets/stock_images/vitamin_supplement_b_f13ce4fc.jpg",
+      "bytes": 166303,
+      "sha256": "81a4520c4a6ab3dc0f249979ae058a188531a8b9aa1f42512e58465aa0032e68"
+    },
+    {
+      "path": "client/index.html",
+      "bytes": 17060,
+      "sha256": "acf9889d73f96d62ba62d55a60f38a31ec29089fe55d13f572a708ea0188d189"
+    },
+    {
+      "path": "client/public/952405afae09c84fa6f7264c4820ce6c.txt",
+      "bytes": 32,
+      "sha256": "fb1c143cbe825170c44915246d0f8eec10aa84449a3fd8143ade5b14b8376585"
+    },
+    {
+      "path": "client/public/banners/allergy-early.png",
+      "bytes": 1789157,
+      "sha256": "bb38fc05052dccfc67ad9951980653422329cf48655ece8032cd554c65fcf2aa"
+    },
+    {
+      "path": "client/public/banners/back-to-school.png",
+      "bytes": 1412381,
+      "sha256": "f00fa12f505b8e0e27e5de05348bbbfb5cf1a18438fb58b9c8be1b3077d6247a"
+    },
+    {
+      "path": "client/public/banners/christmas.png",
+      "bytes": 1979391,
+      "sha256": "f54548fa7f7bf68b7fa195aa383174c09b825bdb06ab8b72683be110196703df"
+    },
+    {
+      "path": "client/public/banners/cinco-de-mayo.png",
+      "bytes": 2331754,
+      "sha256": "45b4ce407212d394ad4965ab57da2ee008c7a989db201f8a8b6797f96ebc3700"
+    },
+    {
+      "path": "client/public/banners/cold-flu-peak.png",
+      "bytes": 1752524,
+      "sha256": "4b5a50f3a9f389ef769ae85eab1bd07714968cafc0201bce9bc579b8d44565c1"
+    },
+    {
+      "path": "client/public/banners/dia-de-muertos.png",
+      "bytes": 1446247,
+      "sha256": "51a602e88368699ed76b620386e07291ccb46b0078722d6afd122ef09236baf3"
+    },
+    {
+      "path": "client/public/banners/earth-day.png",
+      "bytes": 2278379,
+      "sha256": "e80522c019ba7e15b976d83273bb394b701a4b787056182306c950cc9d9a983b"
+    },
+    {
+      "path": "client/public/banners/earth-week.png",
+      "bytes": 1863424,
+      "sha256": "6ceea9ec45e865e18148ba52168fcd44ad32aec9834bcd30cd929b3bdbed76ed"
+    },
+    {
+      "path": "client/public/banners/fall-allergy.png",
+      "bytes": 1743323,
+      "sha256": "bb74c1fc01406807053ab64f99a19c04b862a2adba31783b9eb1ea513b71d937"
+    },
+    {
+      "path": "client/public/banners/fall-immunity.png",
+      "bytes": 2146549,
+      "sha256": "1b91772aa606e21db73a94c803e9e82289593bb1d4829cb553c45101760155b5"
+    },
+    {
+      "path": "client/public/banners/fall.png",
+      "bytes": 2349005,
+      "sha256": "72ba38cd1661bad494fd02d77da9858b3b3ec3d9791499524eab5f70ba76052f"
+    },
+    {
+      "path": "client/public/banners/fathers-day.png",
+      "bytes": 1461373,
+      "sha256": "4701d1ba93d4c4fc2188d0429043dd8865a6105176c5dcd81c6091fd3e4d3c69"
+    },
+    {
+      "path": "client/public/banners/halloween.png",
+      "bytes": 1693262,
+      "sha256": "9de1aac4b7dc54ae52ea50eac9be32ce940eed19f8c843f5e6f908aca537cffc"
+    },
+    {
+      "path": "client/public/banners/heart-health.png",
+      "bytes": 1344717,
+      "sha256": "bf4ffd11510cf384c2ab348734d4b4f42bca2a5551caa2518d87ed8a2c0f082a"
+    },
+    {
+      "path": "client/public/banners/heat-hydration.png",
+      "bytes": 1808669,
+      "sha256": "ee3b867b34cd079c759a376a236d1040aa3517bbf2c40e2ed1bb064b9e69875d"
+    },
+    {
+      "path": "client/public/banners/hispanic-heritage.png",
+      "bytes": 2086355,
+      "sha256": "500e85366187c5c9df77e8eaacf0fd9bb5ea45f1233230092830f19cc80721e1"
+    },
+    {
+      "path": "client/public/banners/holiday-prep.png",
+      "bytes": 1843421,
+      "sha256": "fccc2595ba53db8c265f1b54407dd9d0a6a24178d21e9cde8e50fc12c5ad2123"
+    },
+    {
+      "path": "client/public/banners/independence-day.png",
+      "bytes": 1772025,
+      "sha256": "3dbbf455e6e1bc26a23f289c9761d772bb3e967ab14ff33f8d55a2fe13f57fac"
+    },
+    {
+      "path": "client/public/banners/labor-day.png",
+      "bytes": 1872098,
+      "sha256": "eee526db553c812c169c8c33d8debbc6ef03a2f2eb959c35e5f68650b59cf061"
+    },
+    {
+      "path": "client/public/banners/memorial-day.png",
+      "bytes": 1512641,
+      "sha256": "56de929c58108d3361a720aca293e1d688aadcd4c34fa9a1f8af496be2b15788"
+    },
+    {
+      "path": "client/public/banners/mental-health.png",
+      "bytes": 994319,
+      "sha256": "fb0905a1d44030f328986205c7692f4a6c366250a401faa74516384e29144b71"
+    },
+    {
+      "path": "client/public/banners/mothers-day.png",
+      "bytes": 1360151,
+      "sha256": "0d4382746048202ac48d6b83605d7cd4d4b1453ce569a01f846452bc9074f05c"
+    },
+    {
+      "path": "client/public/banners/new-year.png",
+      "bytes": 2260000,
+      "sha256": "36ccf87454bf733e8e77d88e4f937f5ea0065784c39ead6294c2be36c5914b78"
+    },
+    {
+      "path": "client/public/banners/ny-reset.png",
+      "bytes": 1490327,
+      "sha256": "b9608066840c02d0d832a5ec666c3f23a53251f1f4ff834a72fc9d90a95be955"
+    },
+    {
+      "path": "client/public/banners/nye.png",
+      "bytes": 2212478,
+      "sha256": "06fd72f34baf89041561f985751dde2b65505e0d993ae910654e2b98da386498"
+    },
+    {
+      "path": "client/public/banners/pink-october.png",
+      "bytes": 1488722,
+      "sha256": "952769b8e1d9711791242c4c97827a3cb6b78b6f18725dbaae78235edbc218b9"
+    },
+    {
+      "path": "client/public/banners/post-holiday.png",
+      "bytes": 1331678,
+      "sha256": "15f98a18d9802a39e263db75a05cea3084d6b44b8f92e457f40c0b2e7bbe7be8"
+    },
+    {
+      "path": "client/public/banners/pre-halloween.png",
+      "bytes": 1296433,
+      "sha256": "d2111641edf539dfda01d89bc39a392f18f7cf44aa2020d615ba868dc81322a0"
+    },
+    {
+      "path": "client/public/banners/spring-clean.png",
+      "bytes": 2084009,
+      "sha256": "5d0b6604a9b8d4a24c5eb069ebf336410f00bfaa636ea9c85bbb6ae0c0ed7f6b"
+    },
+    {
+      "path": "client/public/banners/spring.png",
+      "bytes": 2383869,
+      "sha256": "17180aea8386b1571d9b84ce79a1e6036756722dd8052b261eb3aeb5c92803f1"
+    },
+    {
+      "path": "client/public/banners/st-patricks.png",
+      "bytes": 1979360,
+      "sha256": "193cb706a2a4646ff8db0becf1021698f0b27f8da460040cc70fbfada245d248"
+    },
+    {
+      "path": "client/public/banners/summer-skin.png",
+      "bytes": 1444060,
+      "sha256": "676fe02b1e1dfde0a5aff7af877d4a83691899c01cf9ddef51bb2f0b1766b0fe"
+    },
+    {
+      "path": "client/public/banners/summer.png",
+      "bytes": 2010460,
+      "sha256": "80c6410df6643f7fb31fe1e9dc7138f0114f1598ee089bae3a942c64bec09d07"
+    },
+    {
+      "path": "client/public/banners/thanksgiving.png",
+      "bytes": 1967351,
+      "sha256": "08089109fb53319003dc6c3107338d295b366c35d8fc295a181f04a49c29256e"
+    },
+    {
+      "path": "client/public/banners/three-kings.png",
+      "bytes": 1680131,
+      "sha256": "6ab9053a79ff0723759842ca71c0b63eef755b2ec8802c96b887fa4e767f0139"
+    },
+    {
+      "path": "client/public/banners/valentines-prep.png",
+      "bytes": 1472166,
+      "sha256": "ed4bc6d635ab639b77ba529c84020a680a43852fcec667dcdcc9bce22e12b974"
+    },
+    {
+      "path": "client/public/banners/valentines.png",
+      "bytes": 1498334,
+      "sha256": "5a02d38e1b76ad5ec04aa5a21b9c7895461f73539f5123024878ea5acf26a6bc"
+    },
+    {
+      "path": "client/public/banners/veterans-day.png",
+      "bytes": 1575214,
+      "sha256": "27526ea5eb904ee0de12a0b74d7c7d4061f8a640477bf2659340a8fccd93d61c"
+    },
+    {
+      "path": "client/public/banners/winter.png",
+      "bytes": 1926303,
+      "sha256": "7449d6a474edc2cb462e0e6141952fe1f37782adf9fc18757f16ad7aeb9a6033"
+    },
+    {
+      "path": "client/public/concordia-icon.png",
+      "bytes": 59383,
+      "sha256": "b9664df29b70e85b8fe83de088c7bfeec4d59489d640e8db6684f8ce3cae036b"
+    },
+    {
+      "path": "client/public/doctors/aisha-patel.png",
+      "bytes": 1211414,
+      "sha256": "ac0710402d7eaea8e7d3e0612a566b08d73a40b1b23590412934aa159fbf2f44"
+    },
+    {
+      "path": "client/public/doctors/elena-volkov.png",
+      "bytes": 1352009,
+      "sha256": "e64956509c131e0cc87dc22de5d5e922a0c32c3f4a19d84606bca8a00e523dfa"
+    },
+    {
+      "path": "client/public/doctors/marcus-rivera.png",
+      "bytes": 1255654,
+      "sha256": "387ab8e8f932b676f2010843275d76aafc8e28038856af16d3e07464dca12dec"
+    },
+    {
+      "path": "client/public/doctors/maya-goldberg.png",
+      "bytes": 1240538,
+      "sha256": "993a03e571a0e993c03408c6417802562442712f388f6537818392e591e9e1b4"
+    },
+    {
+      "path": "client/public/doctors/robert-kim.png",
+      "bytes": 1435232,
+      "sha256": "56f448fa8630ccd1fd63599e322ee1f32e9eba7c70bdc2516e0a6053f455a687"
+    },
+    {
+      "path": "client/public/doctors/sarah-chen.png",
+      "bytes": 1177765,
+      "sha256": "f044927a27fbb637f1ed0b8a295aaacd16b18192bd6f2e7aecf84b53ed8fc442"
+    },
+    {
+      "path": "client/public/favicon.png",
+      "bytes": 4719,
+      "sha256": "f7ed509daa1341173ef1f9512519b961ec6dba08edbcd6f2836ce8f5f65c0f7c"
+    },
+    {
+      "path": "client/public/icon-192.png",
+      "bytes": 17183,
+      "sha256": "064d1e6c9e6c218115960e8f3d329dbb831cc9e06815b0fa8a6ccdfe78c6bad4"
+    },
+    {
+      "path": "client/public/icon-512.png",
+      "bytes": 63868,
+      "sha256": "054632fb04558fc79739ebe19614d96ffe36823623b64a39cdf635f7f831cac1"
+    },
+    {
+      "path": "client/public/images/pharmacy-couple-shopping.jpg",
+      "bytes": 134983,
+      "sha256": "c6f1d5fe1ec4f1fd5fc742895d12bf2bedaf5ed4b56eb8a5f4d5aea9594740e9"
+    },
+    {
+      "path": "client/public/images/pharmacy-couple-shopping.webp",
+      "bytes": 64262,
+      "sha256": "51d07aa7eb45951f35a04cab71e067d03e772211ba366675186340fde1fa2a47"
+    },
+    {
+      "path": "client/public/images/pharmacy-grandma-consult.png",
+      "bytes": 903633,
+      "sha256": "56bfe5861032a9df215a6ef0c762a3252ef6080eecd743d9d23043e24d80e84f"
+    },
+    {
+      "path": "client/public/images/pharmacy-kid-consult.jpg",
+      "bytes": 54324,
+      "sha256": "a378ee7186c5a2449638e094b61cb94a3f5654ca11178b287909df3b4ccfb660"
+    },
+    {
+      "path": "client/public/images/pharmacy-kid-consult.webp",
+      "bytes": 21444,
+      "sha256": "93fbf4171320bc09410e62939cd502bc42ea03a99780db37b022e32225c8cc93"
+    },
+    {
+      "path": "client/public/images/pharmacy-vaccine.jpg",
+      "bytes": 52751,
+      "sha256": "145d67ce454b28e2d051f97bd6a6f96358c281d2de2dc3abd02f78ca1cce1b10"
+    },
+    {
+      "path": "client/public/images/pharmacy-vaccine.webp",
+      "bytes": 20674,
+      "sha256": "7cfe5ea5de776d2f2bc84dd3a8b2f44d78d2240d298582ca20acf239ed844715"
+    },
+    {
+      "path": "client/public/images/rx-savings-consult.png",
+      "bytes": 2119264,
+      "sha256": "798302719bc52b01d16c5771df556f07a1a6e4373bfbba45834409f53031f365"
+    },
+    {
+      "path": "client/public/images/rx-savings-hero.png",
+      "bytes": 1169642,
+      "sha256": "43850cf9db5a529f225137c83df54d48b4cad15666f96451232d17dc736523d6"
+    },
+    {
+      "path": "client/public/images/rx-savings-landing-consult.png",
+      "bytes": 2024329,
+      "sha256": "c28d1b24e91a0f7c009a8d1a4f4d7e564084a397fe379196020f1c74b605e05d"
+    },
+    {
+      "path": "client/public/images/rx-savings-landing-consult.webp",
+      "bytes": 2144093,
+      "sha256": "76334b4c56f5e31d08bf6ee27c82fe3a6f3b73868d1890375822d742ce6d6cb3"
+    },
+    {
+      "path": "client/public/llms.txt",
+      "bytes": 9050,
+      "sha256": "a8647d8df2219bc0e3c3d04d5786247ca819b23f9d9acef380eb92796c8647ba"
+    },
+    {
+      "path": "client/public/manifest.json",
+      "bytes": 1058,
+      "sha256": "d3965d7d3179840035749268241dbb98948ee37e58fc5ba3c087eaebcda2a5d7"
+    },
+    {
+      "path": "client/public/og-image.png",
+      "bytes": 556868,
+      "sha256": "8df5b29152f7bef53ac0855ff186385e16303f7a9f95234fca787a5b222357dd"
+    },
+    {
+      "path": "client/public/products/aloe-vera.png",
+      "bytes": 1094627,
+      "sha256": "e9942440c93314b654043190438593f02efcf2810c41c52fd59975ed2f9fef14"
+    },
+    {
+      "path": "client/public/products/electrolytes.png",
+      "bytes": 1326937,
+      "sha256": "004035edc73a736537f8f3f73b5bcdc1632a9e03a80f4f14910046566e340968"
+    },
+    {
+      "path": "client/public/products/omega3.png",
+      "bytes": 928692,
+      "sha256": "07035e6fc69be31e903e2c87a8de8a71a95481ef2cee250c517586703c92ad83"
+    },
+    {
+      "path": "client/public/products/sunscreen.png",
+      "bytes": 1117977,
+      "sha256": "e1ec533def611400cb811ef4f1b46b6ff5e40d0196fbe3789fb6fd176080424c"
+    },
+    {
+      "path": "client/public/products/vitamin-d3.png",
+      "bytes": 783170,
+      "sha256": "3a252ad79e81845c0ea277f7382d9172d723331e5a4e6466ef052765f8301292"
+    },
+    {
+      "path": "client/public/products_export.csv",
+      "bytes": 2389,
+      "sha256": "7255eaf46d25783fceae0595a7acee0f5fb01c8dfbe9d34c5f7e85bbe08d052d"
+    },
+    {
+      "path": "client/public/robots.txt",
+      "bytes": 709,
+      "sha256": "d002a3eebbba861b47dec9e63075b660ece4530286349b0c933bd63db587fcef"
+    },
+    {
+      "path": "client/public/videos/hero-bg.mp4",
+      "bytes": 598265,
+      "sha256": "160856b2089de80043b35cab2656b2a053e1d9f838f3589ba84ff61352151b18"
+    },
+    {
+      "path": "client/public/videos/pill-bottle-poster.jpg",
+      "bytes": 20179,
+      "sha256": "499b463c0cf2d01aa070db1c634454736702f7decaf417f37c59bb5a91a7b31e"
+    },
+    {
+      "path": "client/public/videos/pill-bottle.mp4",
+      "bytes": 1471051,
+      "sha256": "417554b3db49ffd3ed4c4b6e95bb9926e09104c9ee4fae1213023fe4afd42116"
+    },
+    {
+      "path": "client/src/App.tsx",
+      "bytes": 14351,
+      "sha256": "f031792767c912ec4d3228e6d2f8ad9ec4af63a30fc7839bc5cda178907fa74d"
+    },
+    {
+      "path": "client/src/__tests__/chat-persona-100.test.ts",
+      "bytes": 20749,
+      "sha256": "3e8665cc6a83a515812fa44fa5b4f6aa4120584638090affd03436c580381934"
+    },
+    {
+      "path": "client/src/__tests__/chat-pickup-regression.test.ts",
+      "bytes": 5104,
+      "sha256": "ee66e7166e62245fa616249eb7a90ac6166ac3073b2750ff773d8370a1acd71b"
+    },
+    {
+      "path": "client/src/__tests__/chat-quality-250.test.ts",
+      "bytes": 12068,
+      "sha256": "bfe97d087a2bb38897a1586a2be854146c97de24b025445aa93f326414b753e6"
+    },
+    {
+      "path": "client/src/__tests__/chat-widget-safety.test.ts",
+      "bytes": 2161,
+      "sha256": "45b505f85a5b24a93af8ee5e60effbf1c15ca8fd2ca71d32c44d89003ff593c9"
+    },
+    {
+      "path": "client/src/__tests__/concierge-handoff.test.ts",
+      "bytes": 1392,
+      "sha256": "731666cbcf3b2de656c1b7e232aa3228ba631061aadcd7abaecffb9326c7c2f9"
+    },
+    {
+      "path": "client/src/__tests__/conversation-followups.test.ts",
+      "bytes": 2568,
+      "sha256": "3e4ee033d053781b0e6520d4edfe7c4875f7444a24a3081004d8afaedd35faab"
+    },
+    {
+      "path": "client/src/__tests__/conversation-recovery.test.ts",
+      "bytes": 2063,
+      "sha256": "95dc3ccdc0eb79678eb635e98502d2ba9a0d100773ae46012eff1a015da28c40"
+    },
+    {
+      "path": "client/src/__tests__/diag-nonrel.test.ts",
+      "bytes": 342,
+      "sha256": "e58eaa9b6105bbfc52dadebaba04b1bae860159f73ed2baee7ee37ded703b226"
+    },
+    {
+      "path": "client/src/__tests__/hybrid-intent-engine.test.ts",
+      "bytes": 22745,
+      "sha256": "2d4b3fb9c132e9375a4bbb1c8ab7d53e6c5a7ddd73791db866a46be4441c3ba4"
+    },
+    {
+      "path": "client/src/__tests__/intent-engine.test.ts",
+      "bytes": 31260,
+      "sha256": "93efa53d5f4d25c353fec963a4a622b035e18ba6d4008c2f55c5f11a40412aae"
+    },
+    {
+      "path": "client/src/__tests__/inventory-sync.test.ts",
+      "bytes": 4454,
+      "sha256": "775d4e558681b13ce07e69978708d84b3559441d79de451159f8a923ee00a955"
+    },
+    {
+      "path": "client/src/__tests__/keyword-tightening.test.ts",
+      "bytes": 6730,
+      "sha256": "f3def0f358d28f1f0f0453b71ee2dab5d2b5abba225e2ba2b80cb6d68298e431"
+    },
+    {
+      "path": "client/src/__tests__/nonrelevant-sweep.test.ts",
+      "bytes": 2726,
+      "sha256": "c96b67d611eee81c7ee4ba5196438cdfc3b2e40c36f3044f5aa159e2c2644f4b"
+    },
+    {
+      "path": "client/src/__tests__/pharmacy-capabilities.test.ts",
+      "bytes": 1925,
+      "sha256": "c5f73c7d4824e6f7287514ce58aa12204adf637c9e6580730c3f005c779b4037"
+    },
+    {
+      "path": "client/src/__tests__/rx-intent-fix.test.ts",
+      "bytes": 952,
+      "sha256": "fbadb6fa098ff4fcca7d6d390dac745a3fa430594e6d8e20704c7a5ced629aea"
+    },
+    {
+      "path": "client/src/components/address-autocomplete-input.tsx",
+      "bytes": 7252,
+      "sha256": "557ed232f3d2eecddde6254d818651e84a3c98989a7bb76cc8b858d739f2086e"
+    },
+    {
+      "path": "client/src/components/address-fields.tsx",
+      "bytes": 11982,
+      "sha256": "a5b51cbdd446e76d804b592c2a4860ffef3d00a1e2ef4f35ae856ca834536a44"
+    },
+    {
+      "path": "client/src/components/admin-layout.tsx",
+      "bytes": 2163,
+      "sha256": "449d64d4d3cb6d921ef4172395388c6309ca867942cce6de38061f1f069059c0"
+    },
+    {
+      "path": "client/src/components/admin-sidebar.tsx",
+      "bytes": 16155,
+      "sha256": "dbc2296e9f3df82252e1835e72ef092636d08a898968afe4e35dbf561d23cfd6"
+    },
+    {
+      "path": "client/src/components/alerts-banner.tsx",
+      "bytes": 4494,
+      "sha256": "16bd646d3ac34db44138a75995a39297addb260b45a266469ce01cd159011b36"
+    },
+    {
+      "path": "client/src/components/animated-icons.tsx",
+      "bytes": 5048,
+      "sha256": "ba3d24e8a445826d093d309c74b921569ac3c2fe61041331d66ee51c443d00fe"
+    },
+    {
+      "path": "client/src/components/back-button.tsx",
+      "bytes": 651,
+      "sha256": "1fa30354279f9c690792ccfa225311ad4eeadf7429325c9e8ec10f572ca89764"
+    },
+    {
+      "path": "client/src/components/barcode-scanner.tsx",
+      "bytes": 5677,
+      "sha256": "3033fc5f2efda70d4022d6fe969671dcf4f25444ce31312af78ea56a7f292d56"
+    },
+    {
+      "path": "client/src/components/chat-widget.tsx",
+      "bytes": 277929,
+      "sha256": "bbb03d6d738194622c30e4ee10b245d757e70f0805c5bb638ca97a2dc4d78b05"
+    },
+    {
+      "path": "client/src/components/cookie-consent.tsx",
+      "bytes": 3690,
+      "sha256": "7119b6b920b96432fab5a4bd8d003dde06c5d28b716c18eff0dc248aa2696646"
+    },
+    {
+      "path": "client/src/components/error-boundary.tsx",
+      "bytes": 3915,
+      "sha256": "5fc6c6d8325c9e39d4d6c8cdb321f79780c8b8e56c5e90e995cb6db7aabaa597"
+    },
+    {
+      "path": "client/src/components/fiber-pulse.tsx",
+      "bytes": 1100,
+      "sha256": "361b9ba156264c2d9581be1207cd3fbfe49812f515f29ea42ebdc4024e580334"
+    },
+    {
+      "path": "client/src/components/header.tsx",
+      "bytes": 29099,
+      "sha256": "e99c66aac7f21790ceba7a7f3318737e16e78b6a7262e36eae4be0f45b08cb85"
+    },
+    {
+      "path": "client/src/components/hours-bar.tsx",
+      "bytes": 3057,
+      "sha256": "41372179bb23fcb53124411c3c25fc8e078556625320ddd3c343528352940956"
+    },
+    {
+      "path": "client/src/components/inventory-sync.tsx",
+      "bytes": 183,
+      "sha256": "e414bb29271f14dc049b3f48dd4ab9ab532859c24df582c78d9988079b86655c"
+    },
+    {
+      "path": "client/src/components/lead-status-card.tsx",
+      "bytes": 11890,
+      "sha256": "5adbc0fe93c45de0cd58988245b29870c67e0e3ab478ef6f3f142570614bd386"
+    },
+    {
+      "path": "client/src/components/motion-button.tsx",
+      "bytes": 86,
+      "sha256": "b2112e6acce0c7e311246a3d78f9d9d7766cca07f86457b8a617212c39ba383d"
+    },
+    {
+      "path": "client/src/components/page-transition.tsx",
+      "bytes": 339,
+      "sha256": "fda15e0337a49e73c07ac72dd01bb52352194134b8132a6d588c9c4edcd1f1b6"
+    },
+    {
+      "path": "client/src/components/pharmacy-loader.tsx",
+      "bytes": 2022,
+      "sha256": "35da2d97c66a608be533886d179c384483542c2b2fcf26c2c572aff6fe2b4810"
+    },
+    {
+      "path": "client/src/components/post-submission-cta.tsx",
+      "bytes": 2529,
+      "sha256": "c54bff20008af39ef5d7b5c59a4c67d56f81f69b4a438041580ef9c0e3e7f37e"
+    },
+    {
+      "path": "client/src/components/product-banner-carousel.tsx",
+      "bytes": 12541,
+      "sha256": "8bd3302796220f1063c647ae15eca3022dd479638bef2a6f4723fdbf0db42144"
+    },
+    {
+      "path": "client/src/components/rx-category-carousel.tsx",
+      "bytes": 5941,
+      "sha256": "dac86ed191acb0584a7b50acdeae371b9b3ff54b00e85f2c1b206668e8ea6aef"
+    },
+    {
+      "path": "client/src/components/scroll-video-hero.tsx",
+      "bytes": 14943,
+      "sha256": "6a2794e41a6987f9ddfc5d006604eb94dbee6a4eca6e19b6c0db0143aeaa98ee"
+    },
+    {
+      "path": "client/src/components/seasonal-mark.tsx",
+      "bytes": 5419,
+      "sha256": "68cc113bbb0d7957929f8c73520fdecd2c0a2501170dfd7e3461e3518d9dd394"
+    },
+    {
+      "path": "client/src/components/seo.tsx",
+      "bytes": 1957,
+      "sha256": "cfc8b1a3411ef197f6fba31154437473baf29acbf5abc26574b509fafe1c2736"
+    },
+    {
+      "path": "client/src/components/service-mega-menu.tsx",
+      "bytes": 19967,
+      "sha256": "bcc6a40b983407f21729bdcd281c04e6f974b1d8f84d3c3deb1c055050e6a02d"
+    },
+    {
+      "path": "client/src/components/site-footer.tsx",
+      "bytes": 7239,
+      "sha256": "7c15c0bdc87f8aea800bd0e2d4ad1b76d73e585aafe3edbf25350fa4587abc47"
+    },
+    {
+      "path": "client/src/components/smart-upsells.tsx",
+      "bytes": 10921,
+      "sha256": "c4132267c2124979a0d349b1c9c40915f0ff1839417b9ecd1951fcdb18038702"
+    },
+    {
+      "path": "client/src/components/tilt-card.tsx",
+      "bytes": 358,
+      "sha256": "b6cd647a3e62a537e13fc70a4f520a3b0cfef9f80c02c2bf3dbdf48cc6ae68aa"
+    },
+    {
+      "path": "client/src/components/ui/accordion.tsx",
+      "bytes": 1977,
+      "sha256": "6b84cb28b5c8e2129d854cffb8c5ba0161758d577db6db30a380cf593a8c0705"
+    },
+    {
+      "path": "client/src/components/ui/alert-dialog.tsx",
+      "bytes": 4420,
+      "sha256": "5ab57317c19d0edd8e2d6d9c98992bcefa1e023a4f90072e40364451dc18456f"
+    },
+    {
+      "path": "client/src/components/ui/alert.tsx",
+      "bytes": 1584,
+      "sha256": "ed78a053a9db783f48d5dfab7398b630f87c17ed2e237b6f30a3eb153675960c"
+    },
+    {
+      "path": "client/src/components/ui/avatar.tsx",
+      "bytes": 1592,
+      "sha256": "f83b4d3f868442e571d9cf8737a9e36ba5de373f6d599c7a6ddd59c1b5c78dfa"
+    },
+    {
+      "path": "client/src/components/ui/badge.tsx",
+      "bytes": 1202,
+      "sha256": "f1f149c9db40e787a6c2ae8ee6b0fedceb4ccb68b3944f6fdca10d7fd540312e"
+    },
+    {
+      "path": "client/src/components/ui/button.tsx",
+      "bytes": 2226,
+      "sha256": "af3e2b1e2bcbd36ac3a875abad831beb7e0f31e14fa1af613b7adb985d99713d"
+    },
+    {
+      "path": "client/src/components/ui/calendar.tsx",
+      "bytes": 2695,
+      "sha256": "a7873d2b249506009a6f018b10a58c7cb38cc583d0d9391e2d90ed288cf6d013"
+    },
+    {
+      "path": "client/src/components/ui/card.tsx",
+      "bytes": 1910,
+      "sha256": "41b67794e29aa487390e9181e29d66c4652c44594cc880ff3e7bc429e2b02a36"
+    },
+    {
+      "path": "client/src/components/ui/checkbox.tsx",
+      "bytes": 1056,
+      "sha256": "60a0084cbdfcb96e54c9f6438e9066dfe7ed0a7e421b33985d5eb57975d110a4"
+    },
+    {
+      "path": "client/src/components/ui/dialog.tsx",
+      "bytes": 4247,
+      "sha256": "30804892d145e840253967595fb8509f8ed581a4d1bf142de8aecfa526fb38bf"
+    },
+    {
+      "path": "client/src/components/ui/input.tsx",
+      "bytes": 844,
+      "sha256": "b5c4ff4e0a57cf16c4519165745550029d66a2e25b8b018654b60ac2c5764e79"
+    },
+    {
+      "path": "client/src/components/ui/label.tsx",
+      "bytes": 710,
+      "sha256": "e69cfc27d78c9ef31b248ab8ea4fa54327c1038843f70efb5cd85d54c0bf1e0e"
+    },
+    {
+      "path": "client/src/components/ui/popover.tsx",
+      "bytes": 1356,
+      "sha256": "69f74cdd76588a1249522ff8009e044eee6080ad8cf26cb08d7a5fc3281f0255"
+    },
+    {
+      "path": "client/src/components/ui/progress.tsx",
+      "bytes": 791,
+      "sha256": "8c036da4baed076de68d27719929dc98151a81b51456bfa6a2488d835303b1d7"
+    },
+    {
+      "path": "client/src/components/ui/radio-group.tsx",
+      "bytes": 1467,
+      "sha256": "74f87531da1fde8d3c07dbd7b380ee6508a70d5c0af1c22e2d2c33d66cc79f10"
+    },
+    {
+      "path": "client/src/components/ui/scroll-area.tsx",
+      "bytes": 1642,
+      "sha256": "d7d02600effca55d0dcadce8c09c97ebddda3a19c5fa1d52dc9f6f727b26c6b1"
+    },
+    {
+      "path": "client/src/components/ui/select.tsx",
+      "bytes": 5779,
+      "sha256": "3d2344487bc23396e6c0f0b3dfa5e4b28513dafed32b17fed195ff82de5283b7"
+    },
+    {
+      "path": "client/src/components/ui/separator.tsx",
+      "bytes": 756,
+      "sha256": "c956c4cca4b8442fa9314d6079b9f975e1ee39d5804aaf2966990f6258ac342a"
+    },
+    {
+      "path": "client/src/components/ui/sheet.tsx",
+      "bytes": 4849,
+      "sha256": "5a79eb2c92f1fffa617644c967f67641a54ba9fa6ee0dd602ed032eafacb3ca1"
+    },
+    {
+      "path": "client/src/components/ui/sidebar.tsx",
+      "bytes": 21863,
+      "sha256": "be52f6d227aa8c4f96875da37ed6ca9137d1b529f95290b39f80396f60be99d7"
+    },
+    {
+      "path": "client/src/components/ui/skeleton.tsx",
+      "bytes": 261,
+      "sha256": "a72a9d8fc1c1999b5411a33391c5e70048863c5865629077280e943ca85689a8"
+    },
+    {
+      "path": "client/src/components/ui/switch.tsx",
+      "bytes": 1139,
+      "sha256": "bd29ce723e952bc7f8fab367320347ca82fbb933f4da9872c7120d6765662ebe"
+    },
+    {
+      "path": "client/src/components/ui/table.tsx",
+      "bytes": 2765,
+      "sha256": "1da243956282c040db49d5718d2f0093a705fbbdfa3a25f51c1a31a069c45093"
+    },
+    {
+      "path": "client/src/components/ui/tabs.tsx",
+      "bytes": 1883,
+      "sha256": "d9958fd005db42bcca4f2c12ede63500e74f1a9bd82ddc3a6bf6fcb369706f07"
+    },
+    {
+      "path": "client/src/components/ui/textarea.tsx",
+      "bytes": 689,
+      "sha256": "aaf46918c590c2bf59e2afb7904dfd8e69317e12ee34ff93ed2746dd06cc994a"
+    },
+    {
+      "path": "client/src/components/ui/toast.tsx",
+      "bytes": 5396,
+      "sha256": "ffb11568181406785bdc15f16bb2bc642d2a9ef62e998bef79a17f9699ae474f"
+    },
+    {
+      "path": "client/src/components/ui/toaster.tsx",
+      "bytes": 772,
+      "sha256": "1348f1a1f9820e2f1394b93cecc156a7e22f03636ab9270753985549aae2be74"
+    },
+    {
+      "path": "client/src/components/ui/tooltip.tsx",
+      "bytes": 1209,
+      "sha256": "2f26d20816448c630faccbda5ae9b4fe47c36f1fb14dbbd85b6652b7c24c1d51"
+    },
+    {
+      "path": "client/src/components/wellness-upsell.tsx",
+      "bytes": 13062,
+      "sha256": "a3ec8517cc7d56c9d628fd4ddf9436d0497c1cab8d0c7cd326b12e5e878f89c7"
+    },
+    {
+      "path": "client/src/contexts/authBridge.tsx",
+      "bytes": 1630,
+      "sha256": "6f48feae75deac38f82faae879b244a0f4063a28c63678501182d46d11436b1b"
+    },
+    {
+      "path": "client/src/hooks/use-mobile.tsx",
+      "bytes": 565,
+      "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b"
+    },
+    {
+      "path": "client/src/hooks/use-toast.ts",
+      "bytes": 3895,
+      "sha256": "5aab0623ee24bddf9420c259a23a06996292e38ea70eccbac2715516f6d01a0b"
+    },
+    {
+      "path": "client/src/hooks/useAdminWebSocket.ts",
+      "bytes": 7483,
+      "sha256": "99755572b4f0e94a375e2e423847d84c178745c616528829ef2272e61dd657d2"
+    },
+    {
+      "path": "client/src/hooks/useAuth.ts",
+      "bytes": 2491,
+      "sha256": "3aff31d905b0852211ac4d6b3abc738d54a363f9e7f00fadd829c171515b06ee"
+    },
+    {
+      "path": "client/src/hooks/useGuestCart.ts",
+      "bytes": 5017,
+      "sha256": "2f0b1f1f8dad64da25637a2a4729aaf6bdccb065a23ce1932e058ec72bcb5bdf"
+    },
+    {
+      "path": "client/src/hooks/useGuestCartSync.ts",
+      "bytes": 1978,
+      "sha256": "5cfcfb17b0f7b00ccff981147a93c195f27176cc971fa1c8522c560bf40bc9c6"
+    },
+    {
+      "path": "client/src/hooks/useLenis.ts",
+      "bytes": 1390,
+      "sha256": "6b68af57e2e303778eca26a01eff8f441227c71efa07920c91f986ebe71cf33a"
+    },
+    {
+      "path": "client/src/hooks/useNominatimAutocomplete.ts",
+      "bytes": 4939,
+      "sha256": "e96923985a0e9e64f7e3c12a89e353bc0d91e1689ff120f90ca6ea7e3fb6e408"
+    },
+    {
+      "path": "client/src/hooks/usePageViewTracker.ts",
+      "bytes": 1307,
+      "sha256": "13a1be0f2c4a2557fb5c6eae4ac0ad067c755c244d273e08af640dfb94e6f601"
+    },
+    {
+      "path": "client/src/hooks/useSeasonalTheme.ts",
+      "bytes": 1072,
+      "sha256": "4566388140f93c833df18c0904ed8724b3ad889af368ae0306dbbbe9116243c6"
+    },
+    {
+      "path": "client/src/hooks/useStaffWebSocket.ts",
+      "bytes": 3296,
+      "sha256": "df9d2dfee8361251cbb34e9902ecf7105a455529262cf551d46cd46685111d7e"
+    },
+    {
+      "path": "client/src/index.css",
+      "bytes": 34201,
+      "sha256": "05c146beee84bebfc13caeec3e9939eb430942190eccbef0dd300aaffb0df3ba"
+    },
+    {
+      "path": "client/src/lib/animations.ts",
+      "bytes": 6782,
+      "sha256": "daef29149763148457dece7b94a8a33acf61175a21282514e1b4eb8a5b5649ff"
+    },
+    {
+      "path": "client/src/lib/authUtils.ts",
+      "bytes": 116,
+      "sha256": "0a8c74eef60dd205e2a344b6c5ddba800bc514814d6b8e5be36d3a6b61e3c2dc"
+    },
+    {
+      "path": "client/src/lib/chat-intent-guard.ts",
+      "bytes": 344,
+      "sha256": "52b48e17b08c8496090c00f04633cece255c8b1f5d9f9c40c6b2274ded22d4f5"
+    },
+    {
+      "path": "client/src/lib/chat-request-routing.ts",
+      "bytes": 6808,
+      "sha256": "3360c06695a2c78b642921ad2352366c8be7b71f62e74e0411d67221c87d739a"
+    },
+    {
+      "path": "client/src/lib/clerkAppearance.ts",
+      "bytes": 2012,
+      "sha256": "84317a8cd42fbbc0f624a98a58035ecd1ce0cbce2fb6ad7ea8b0b98bb14a88a5"
+    },
+    {
+      "path": "client/src/lib/clerkToken.ts",
+      "bytes": 751,
+      "sha256": "bd0ff2e0af7a55b29632b048d3c8d3d34afb07bcf351fd6e728007a012ae46f7"
+    },
+    {
+      "path": "client/src/lib/concierge-handoff.ts",
+      "bytes": 1469,
+      "sha256": "a96991b6c84894bd13d3b528297d584f7ef86dd89cc13d743e08beb5288a198f"
+    },
+    {
+      "path": "client/src/lib/conversation-followups.ts",
+      "bytes": 3548,
+      "sha256": "21f69072d07d84a956f023c6a4df5a702460ad225d2dafe322ae7c5329e107ca"
+    },
+    {
+      "path": "client/src/lib/conversation-recovery.ts",
+      "bytes": 3373,
+      "sha256": "80ae15d8cd31b42de1aabda0eb3255d2d453b265889565203521510c0ae256d1"
+    },
+    {
+      "path": "client/src/lib/input-helpers.ts",
+      "bytes": 967,
+      "sha256": "1c6188b0b615b414f8594c1093a1ebc04e7c7a8f66e3ea727c99df7191b9ce89"
+    },
+    {
+      "path": "client/src/lib/intent-engine.ts",
+      "bytes": 71792,
+      "sha256": "2a1b3cc3bf08ec51e56266ad5e301329b30df27cf47d8bd85d9de3db6de579a8"
+    },
+    {
+      "path": "client/src/lib/inventory-sync.ts",
+      "bytes": 3214,
+      "sha256": "3d9075e762013911a3c98928367d6d8a3d9d7d48fc670dc8128c7f407186d0b0"
+    },
+    {
+      "path": "client/src/lib/pharmacy-capabilities.ts",
+      "bytes": 6921,
+      "sha256": "d395e9f3d32720765d06d744cd6e77526e6c7dc68847df45543f22541a2ecadf"
+    },
+    {
+      "path": "client/src/lib/queryClient.ts",
+      "bytes": 2062,
+      "sha256": "3d29779363d1235324b940a247a38527ffba6210e63b226582f9f3b21bcc4075"
+    },
+    {
+      "path": "client/src/lib/season-banners.ts",
+      "bytes": 13280,
+      "sha256": "678f4c71c123cff3b18cf7f95ba9c8d8ef01e93fa821e3ba0249e50ab6cb176f"
+    },
+    {
+      "path": "client/src/lib/seasonal-calendar.ts",
+      "bytes": 18437,
+      "sha256": "f1b0b1e5f61d8bba139e7c8aaa8cb0d974d98d831175a917ad1421f286619293"
+    },
+    {
+      "path": "client/src/lib/shop-categories.test.ts",
+      "bytes": 2574,
+      "sha256": "7edaee251d8129dfd94c3c534eac2a1786435efb40a95b24cec43bf87a9a7c5a"
+    },
+    {
+      "path": "client/src/lib/shop-categories.ts",
+      "bytes": 1808,
+      "sha256": "38c63d72ab1bc3e5293a67aade3139af16f772c3878d5e85b581ab0d019af38a"
+    },
+    {
+      "path": "client/src/lib/shop-weekly-picks.test.ts",
+      "bytes": 2705,
+      "sha256": "2228b370b9a6cb1c431a95efaf5d26d52c207d948ef60e892115e61b593da1a3"
+    },
+    {
+      "path": "client/src/lib/shop-weekly-picks.ts",
+      "bytes": 2078,
+      "sha256": "1bcfdc272b3abd6c16180f3ef4a002b8782d638b04ae7746191991b940bff219"
+    },
+    {
+      "path": "client/src/lib/staffApi.ts",
+      "bytes": 4010,
+      "sha256": "5686a83bcd349c78080a871dec9015f8032e7c057ba2b4c6d31b856b81a32c8f"
+    },
+    {
+      "path": "client/src/lib/utils.ts",
+      "bytes": 166,
+      "sha256": "7c8c3dfc0cdd370d44932828eb067ef771c8fe7996693221d5d4b90af6d54f2d"
+    },
+    {
+      "path": "client/src/main.tsx",
+      "bytes": 2221,
+      "sha256": "4dd3d3fbcf25b81fb90a22a14f5c9d01281f1de500f3dbd7d57bf27b5fce9b6b"
+    },
+    {
+      "path": "client/src/pages/about.tsx",
+      "bytes": 18129,
+      "sha256": "624a764df1ad0a8c70a0fb78c933bcaa0585029866972d3e6424616b566850a6"
+    },
+    {
+      "path": "client/src/pages/accessibility.tsx",
+      "bytes": 10008,
+      "sha256": "52eeacd0c601d619d875ee3d36eb27babf341dc15889044ff551436a746f93a1"
+    },
+    {
+      "path": "client/src/pages/admin/alerts.tsx",
+      "bytes": 19228,
+      "sha256": "a4c9d0d9b67474e1470959689900f3396619ef8c3eae96eda5c7f39fa6d081da"
+    },
+    {
+      "path": "client/src/pages/admin/analytics.tsx",
+      "bytes": 25196,
+      "sha256": "70bdabeb265e2371ae3316bcc8895af7854d1ca94709f7ef97c3d810a3217d13"
+    },
+    {
+      "path": "client/src/pages/admin/blister-patients.tsx",
+      "bytes": 67372,
+      "sha256": "31c21353fec57aa9a038ebf0b4111f64e7efbab94138270965540ca8a8cecbcb"
+    },
+    {
+      "path": "client/src/pages/admin/blog.tsx",
+      "bytes": 37113,
+      "sha256": "c4a7ddfa4bc68635b053475548cf8f5be6957a85b99ea0fa1b844f4e4a1d0074"
+    },
+    {
+      "path": "client/src/pages/admin/caregiver-requests.tsx",
+      "bytes": 13980,
+      "sha256": "9f1a0b764f8c9e71830bba6b1f255295411b8ccf53b48ff7b1f5e98bb73002e2"
+    },
+    {
+      "path": "client/src/pages/admin/contact-submissions.tsx",
+      "bytes": 6200,
+      "sha256": "cbd6a52d031e7060ebaba5a8680515350be158dcc9bbbbb79437e8b0f6dbf6d2"
+    },
+    {
+      "path": "client/src/pages/admin/conversion-leads.tsx",
+      "bytes": 24709,
+      "sha256": "52c2a4d49ad7a2bbb0376267c627f87b7e3880d22f5e7ea6dbcd0e116eb4c9ea"
+    },
+    {
+      "path": "client/src/pages/admin/customers.tsx",
+      "bytes": 68309,
+      "sha256": "0f24e580208529ad35348049cd998483bdfba6b5531888558e9636bbe6e33e56"
+    },
+    {
+      "path": "client/src/pages/admin/dashboard.tsx",
+      "bytes": 16918,
+      "sha256": "955d48433efda1e1f69873a78c9e27bde31295f265fba2a1a387554b5ccc6f29"
+    },
+    {
+      "path": "client/src/pages/admin/doctor-match-leads.tsx",
+      "bytes": 19204,
+      "sha256": "5d1ba6f0fe68f1b1bdba8600b39f0baaedc6ea2be29c4bbed8c335539cade640"
+    },
+    {
+      "path": "client/src/pages/admin/doctor-partners.tsx",
+      "bytes": 23262,
+      "sha256": "a75982a3a34dd19120d80bd140f78c1b05d5ee685151462d8ef7639783d56cb3"
+    },
+    {
+      "path": "client/src/pages/admin/doctors.tsx",
+      "bytes": 27223,
+      "sha256": "3db34f68f3a168c49ab535a8391ae2484a2e87e2aa9e9fd39b5c933123377e74"
+    },
+    {
+      "path": "client/src/pages/admin/email-template.tsx",
+      "bytes": 24321,
+      "sha256": "18747d273e133140b9d64c0ac185dd22f177c0e8e8b33034b556158cbf96b8be"
+    },
+    {
+      "path": "client/src/pages/admin/flu-shots.tsx",
+      "bytes": 20823,
+      "sha256": "14f690926a8966ead40dbca36646c53bdb5e7dd34ad5ddc4310314f8986e1610"
+    },
+    {
+      "path": "client/src/pages/admin/insurance-help.tsx",
+      "bytes": 14795,
+      "sha256": "da1d0c150bfc3ec697621159c9573b88752cb8a76404bf99642126e6895a5a2f"
+    },
+    {
+      "path": "client/src/pages/admin/integration-health.tsx",
+      "bytes": 7264,
+      "sha256": "92411f01ffb1d3dfb928271390718dfa30da7c5648a335540ba0eb4f7a9fcb4a"
+    },
+    {
+      "path": "client/src/pages/admin/inventory.tsx",
+      "bytes": 19224,
+      "sha256": "d19e298b6e8e8f778ac6e32be0959d78ed0defd7fdb02a16e3b264f14e2fe145"
+    },
+    {
+      "path": "client/src/pages/admin/ltc-leads.tsx",
+      "bytes": 14303,
+      "sha256": "afcdcb290f4993445b4554355ee3f6d10971c90f3bb783db956f2daf3a42618d"
+    },
+    {
+      "path": "client/src/pages/admin/milestone-patients.tsx",
+      "bytes": 5078,
+      "sha256": "5cd15e5bfd8a0a24ddb4a50b5569dc3737ab126ac406d84be01cc03aed7c7a8e"
+    },
+    {
+      "path": "client/src/pages/admin/notification-settings.tsx",
+      "bytes": 18144,
+      "sha256": "8902dce0b3a9d4cb507b87de8e539d55fa01338351de3e78b8201f9f510b3bc4"
+    },
+    {
+      "path": "client/src/pages/admin/pa-analytics.tsx",
+      "bytes": 17370,
+      "sha256": "77e9268f55f1d6db7bf5b012a892d19647d7f7cd8ea3be8c7bfa490a86cf5f7d"
+    },
+    {
+      "path": "client/src/pages/admin/pa-requests.tsx",
+      "bytes": 56460,
+      "sha256": "5cbbacce731cd6fc63998b4dc50ab86bfe1611e455ae8887a35f27be7b3be555"
+    },
+    {
+      "path": "client/src/pages/admin/patient-profile.tsx",
+      "bytes": 42821,
+      "sha256": "98ca58d9714fe0a9a5650b3fdc0142fa2abb3edf1de81d1ace9a7854e28a4bc3"
+    },
+    {
+      "path": "client/src/pages/admin/patient-requests.tsx",
+      "bytes": 29384,
+      "sha256": "540e89a2bb8b003d6a489138ea0143d872905c8d6a1fb48ff173e9a49c2b6225"
+    },
+    {
+      "path": "client/src/pages/admin/patients-list.tsx",
+      "bytes": 30082,
+      "sha256": "0620011e652ae54ab00e11290d9cad81e3745d5cb139a31198a699ef368b1e42"
+    },
+    {
+      "path": "client/src/pages/admin/prescriptions.tsx",
+      "bytes": 10922,
+      "sha256": "79a662d3ed91b9aa88b6d51685fcbf14cf14893671a5694e452e316846bec3b1"
+    },
+    {
+      "path": "client/src/pages/admin/primerx-sync.tsx",
+      "bytes": 48729,
+      "sha256": "0b47f0604e817cfe368088c30fc2d82ffa17d804c2b49e6032ba853ccfff184c"
+    },
+    {
+      "path": "client/src/pages/admin/restock-notifications.tsx",
+      "bytes": 10088,
+      "sha256": "75218d566c2aac97f663f2d378ce9b732fa465450efc9ff06c19a8da9e37da5b"
+    },
+    {
+      "path": "client/src/pages/admin/rewards.tsx",
+      "bytes": 78003,
+      "sha256": "ae5cefe41261f2da19b0d44c0d3bb170a7ab7b42a1c337b67b679c156a5ba7f7"
+    },
+    {
+      "path": "client/src/pages/admin/sales.tsx",
+      "bytes": 9335,
+      "sha256": "ecf744a7abbdf47cbcaff47ccad70d08ae1a087dfafb7e9ab260a4061f6ace0d"
+    },
+    {
+      "path": "client/src/pages/admin/savings-requests.tsx",
+      "bytes": 12409,
+      "sha256": "f863bb2ee642382a0329d69cc06099d0d0170d8e708f42533b8ca3a521a994ca"
+    },
+    {
+      "path": "client/src/pages/admin/specialty-requests.tsx",
+      "bytes": 18047,
+      "sha256": "769232a74c59fb2bda168648b4e47c1e41785459dd0b4a6c06a4e1336b609cb5"
+    },
+    {
+      "path": "client/src/pages/admin/staff-emails.tsx",
+      "bytes": 19015,
+      "sha256": "f0edcf907c3b6f8bfb95e996b9bbcfb266354780c6114e2702703f9e68d24048"
+    },
+    {
+      "path": "client/src/pages/admin/transfer-requests.tsx",
+      "bytes": 50905,
+      "sha256": "3a29dbd8c888dedb1340056de7a6b712c721d76072a79d3735ec6e389118d666"
+    },
+    {
+      "path": "client/src/pages/admin/urgent-refills.tsx",
+      "bytes": 24223,
+      "sha256": "1115848692b655fe7dfca8bce930a8dce857b3f9f37a683822c937cb377b5a77"
+    },
+    {
+      "path": "client/src/pages/admin-login.tsx",
+      "bytes": 4892,
+      "sha256": "fa24403b30c1beb7c102f0bd1030763b32989dd1a7aa0880f2faf9342cdeed50"
+    },
+    {
+      "path": "client/src/pages/api-docs.tsx",
+      "bytes": 34966,
+      "sha256": "2a54394193e3b7695dcf51c250437a9d96d1ef443a1e6c90a24eacdef101e002"
+    },
+    {
+      "path": "client/src/pages/blog-post.tsx",
+      "bytes": 11609,
+      "sha256": "b8631ebb9dbb2675f12d7d4bb427f62e3b50632093856ba4d2ede3d33fd0eabe"
+    },
+    {
+      "path": "client/src/pages/blog.tsx",
+      "bytes": 25070,
+      "sha256": "38d270fe7414ba374f4284ed48485eb37ab016dd9206438ecf4eaa2858879411"
+    },
+    {
+      "path": "client/src/pages/cart.tsx",
+      "bytes": 30870,
+      "sha256": "a81d7ac974d144cfcbbb4e44974d2264e52027407d863c26ee329f050c7e3b6c"
+    },
+    {
+      "path": "client/src/pages/checkout.tsx",
+      "bytes": 7794,
+      "sha256": "7429cc193b852bdd553ad445333ceb895e98103c32dd3149026d518e0f6c81ef"
+    },
+    {
+      "path": "client/src/pages/complete-profile.tsx",
+      "bytes": 19978,
+      "sha256": "960153910ae0dadd4c49ebe42ebbfb4372da4092d2602869be150e2878df2edf"
+    },
+    {
+      "path": "client/src/pages/contact.tsx",
+      "bytes": 13848,
+      "sha256": "c114046df2fae5f5764ccbc0a447e951d4f104193439e60b502296853f6d0947"
+    },
+    {
+      "path": "client/src/pages/cookie-policy.tsx",
+      "bytes": 10288,
+      "sha256": "ad410d0cafefa596a75dee84539d991625108fce5ff90db0ed6c8d1e2ca0fd69"
+    },
+    {
+      "path": "client/src/pages/express-checkout.tsx",
+      "bytes": 27362,
+      "sha256": "4aae23e3721ca82644f1b3c915144cc0af7c58b1491165bba0938dbbe59345f0"
+    },
+    {
+      "path": "client/src/pages/faq.tsx",
+      "bytes": 19170,
+      "sha256": "a2b898f6434142e68857ceffc809d14ce15c1f32fcd41e25f33fc678d158db4d"
+    },
+    {
+      "path": "client/src/pages/find-doctor.tsx",
+      "bytes": 48911,
+      "sha256": "b505bc8052b42434fa93d245db2a1aebd667bad8597962339cfe706a8a97e327"
+    },
+    {
+      "path": "client/src/pages/landing.tsx",
+      "bytes": 126321,
+      "sha256": "9dafd79e953f03bb50336d6595fc1a3566ac603d349c129c190b0b9006d991bd"
+    },
+    {
+      "path": "client/src/pages/login.tsx",
+      "bytes": 2490,
+      "sha256": "3f4bad31fc23adcc2d8b527dc90356e084c806b71f93316cb6f1d56573f95a6e"
+    },
+    {
+      "path": "client/src/pages/ltc-partnership.tsx",
+      "bytes": 20833,
+      "sha256": "42c6c109b67183a49594938f5dd6f956b494bd87b6552cf981f4a2be2cf5745f"
+    },
+    {
+      "path": "client/src/pages/my-orders.tsx",
+      "bytes": 9296,
+      "sha256": "a975855ecaf10d1262dd0e6784c20d490b4f454bc13ca01ca0e0c099583d3713"
+    },
+    {
+      "path": "client/src/pages/my-tickets.tsx",
+      "bytes": 16664,
+      "sha256": "c8309ed76a2093962784653957518d5fa7b33a3cfcbc8107ddb14a9890e359bb"
+    },
+    {
+      "path": "client/src/pages/non-discrimination.tsx",
+      "bytes": 11177,
+      "sha256": "5ac702ae9d0d87adc4c7e8205c36ea7ce49b418641f1e6b116ec111a499ce723"
+    },
+    {
+      "path": "client/src/pages/not-found.tsx",
+      "bytes": 901,
+      "sha256": "9474b6f4874cbf1ad065f2f713ff5ce82f2420b1ebe1513745bff9fe4821fd19"
+    },
+    {
+      "path": "client/src/pages/pa-sign.tsx",
+      "bytes": 16964,
+      "sha256": "146fb97e41868620a56ec4d31500cc56e68e329423ef1dcc1a11090b59a1cca8"
+    },
+    {
+      "path": "client/src/pages/privacy-policy.tsx",
+      "bytes": 15523,
+      "sha256": "07f5c2a50bd13ba5013cef87960c29d5e467ae13c7783179ce2fccba83647dc1"
+    },
+    {
+      "path": "client/src/pages/profile.tsx",
+      "bytes": 22561,
+      "sha256": "c19ba15ce80964d2b940612dae0196e7b2068ac0af8ff18e2bfd6562e397c922"
+    },
+    {
+      "path": "client/src/pages/rx-savings.tsx",
+      "bytes": 33513,
+      "sha256": "bf85927d669b9eb60976dfdb5ea217640a01938fd9a2ea936f795352cf9c63d8"
+    },
+    {
+      "path": "client/src/pages/schedule-flu-shot.tsx",
+      "bytes": 36040,
+      "sha256": "c6bc1ea983aca05cec7ef094c32d46fcc102a34d5a33587cf8e0e8e1e815870f"
+    },
+    {
+      "path": "client/src/pages/shop.tsx",
+      "bytes": 54061,
+      "sha256": "926fe4477b934f1aeb30be4b0b2c0f99e33542131a52b922a9f19e32654976aa"
+    },
+    {
+      "path": "client/src/pages/signup.tsx",
+      "bytes": 2061,
+      "sha256": "53a44285c055d7f54d3ccad5ab96d739bfd5c9443393dc7292d9d149cd85dfb1"
+    },
+    {
+      "path": "client/src/pages/sitemap.tsx",
+      "bytes": 6381,
+      "sha256": "7d71e6a65ec0c4d13f2a7ec9e3168e84084b01380658757b3441a8280a5816eb"
+    },
+    {
+      "path": "client/src/pages/specialty.tsx",
+      "bytes": 56053,
+      "sha256": "0c15746d7a20fbc347b3ef15545962fd326ce915aa291af1801a108df9c158ed"
+    },
+    {
+      "path": "client/src/pages/staff/index.tsx",
+      "bytes": 5464,
+      "sha256": "78a25f55c9302a82893ae4c200e155ba4ca92e65f87182de1750ec1684c00407"
+    },
+    {
+      "path": "client/src/pages/staff/inventory.tsx",
+      "bytes": 21804,
+      "sha256": "698fc8cae94ea1770210da262d77b5de0f2e1de846f3b4706abfd63b4021c1f6"
+    },
+    {
+      "path": "client/src/pages/staff/login.tsx",
+      "bytes": 1108,
+      "sha256": "65ad6176894a8ad84486bdc2551b0c4c0ca4faee6b5674b4f794383c66ee5825"
+    },
+    {
+      "path": "client/src/pages/staff/orders.tsx",
+      "bytes": 16943,
+      "sha256": "f07cc0600f44d57631627bb13cf7b14a85bb30b726d89660b4cc9a7a58a55e87"
+    },
+    {
+      "path": "client/src/pages/terms-of-service.tsx",
+      "bytes": 12559,
+      "sha256": "90e14141ff04c5fe10897cb2586848777acbd944191484fbeeca5ad67e234715"
+    },
+    {
+      "path": "client/src/pages/wellness.tsx",
+      "bytes": 20828,
+      "sha256": "c7bfabaeefa9c773eacba1f979d1ea761ca58651eb5ce8f1bf58bc44e26f8c86"
+    },
+    {
+      "path": "components.json",
+      "bytes": 459,
+      "sha256": "ac24a8e743f3be926f7ff2bce97563097ed0c69f88fc57a7e6ec94af3615a031"
+    },
+    {
+      "path": "design_guidelines.md",
+      "bytes": 6655,
+      "sha256": "bb70ebb1c1983c3b320c0c833cc49530ade61e09aeb90012da4922831e628f8e"
+    },
+    {
+      "path": "docs/AWS_MIGRATION_RUNBOOK.md",
+      "bytes": 29934,
+      "sha256": "9b92a256358fc0ef0e61af9a59a871e26114a94419dd169d07a6bd55eeeb02dc"
+    },
+    {
+      "path": "docs/VIVEK_AWS_TECHNICAL_HANDOFF.md",
+      "bytes": 30534,
+      "sha256": "7629730bba0edc24010374117937b8c3b07519cfdfb162b77fc39b3cf01b92f4"
+    },
+    {
+      "path": "docs/aws-source-export.md",
+      "bytes": 6415,
+      "sha256": "78902e8fe83d1c8c17d45a9743e1c24b1ac8cf652ba83fc17dcd40648d636337"
+    },
+    {
+      "path": "docs/care-navigator-api-spec.md",
+      "bytes": 11726,
+      "sha256": "811d54656453dcb75dc79cce8424993624a9900702d528b58ac8b434c59a6fb4"
+    },
+    {
+      "path": "docs/chatbot-complete-audit.md",
+      "bytes": 36952,
+      "sha256": "4d54a673343ae4db81ad57e2377c95df4f54e253250f096e733b88d71fa6b697"
+    },
+    {
+      "path": "docs/concordiacare-app-api-spec.md",
+      "bytes": 16586,
+      "sha256": "47aade97d10d75408ad16a121c6df1b61d78d1eb10f365a833164a4564f67648"
+    },
+    {
+      "path": "docs/pharmflows-connection.md",
+      "bytes": 3329,
+      "sha256": "ac089346db356a172c4b71bc4c75de1f8ab292dd2096fe970507a8dbbd8a1c61"
+    },
+    {
+      "path": "docs/staff-order-handoff.md",
+      "bytes": 16582,
+      "sha256": "12c46667e3467ae6789320acfbede05cd93192517ac12292aaef41d4f9f557c3"
+    },
+    {
+      "path": "drizzle.config.ts",
+      "bytes": 325,
+      "sha256": "db80922910a890344195617c17acd664cd9b922973f607a5c6fdc0c749b4476a"
+    },
+    {
+      "path": "eng.traineddata",
+      "bytes": 5199098,
+      "sha256": "5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 460691,
+      "sha256": "d0bb4b7ef69710eb9707071d4a9d1c5ab37689c35ecc630d6b1df20948c1bc7c"
+    },
+    {
+      "path": "package.json",
+      "bytes": 5158,
+      "sha256": "439b6ea64fa41bb7afacbe55b85b3076e4cd4b5238e3c6bce2a9bdcfac87fb16"
+    },
+    {
+      "path": "postcss.config.js",
+      "bytes": 80,
+      "sha256": "190c877db466995bf1482f4a16abd06e04a89ede3119341e2a86ff96e1737b27"
+    },
+    {
+      "path": "scripts/export-aws-source.py",
+      "bytes": 6994,
+      "sha256": "8bc6862ea29cd459165238231124d1b732e0c8c9519f57b0b7710e975d42ce06"
+    },
+    {
+      "path": "scripts/make-admin.ts",
+      "bytes": 1948,
+      "sha256": "42eb94b49860b106c4d33fdcd5f5764bfbe1b53f20c0e0f88368bc3e534b060f"
+    },
+    {
+      "path": "scripts/post-merge.sh",
+      "bytes": 5001,
+      "sha256": "816a0a7009920bb97d2276a722c430234113f0e6f800b4a9213101ee0709ae23"
+    },
+    {
+      "path": "scripts/verify-pharmflows.ts",
+      "bytes": 408,
+      "sha256": "1111bd03423c40e0ccef937aa17bdddab368e582189cdad1389444d207eb2c8e"
+    },
+    {
+      "path": "server/__tests__/address-verification.test.ts",
+      "bytes": 2935,
+      "sha256": "17fc7d306b9c6bf4d9abf361563640486897b15de151c292b6a1e57125f53cfa"
+    },
+    {
+      "path": "server/__tests__/canonical-patient-identity.test.ts",
+      "bytes": 2385,
+      "sha256": "06fc01ac54cc3ce6f8558e303b10e269de9fe89c2645e1e1c167beedcccdb4ec"
+    },
+    {
+      "path": "server/__tests__/cart-quantity.test.ts",
+      "bytes": 784,
+      "sha256": "d9a2bc61971334030b0c844d33d01c1f3e4c7eeea5c858aea81c328afd611ee4"
+    },
+    {
+      "path": "server/__tests__/chat-action-model.test.ts",
+      "bytes": 1614,
+      "sha256": "39b85f6a4511df9d6eab2186cd9b00e0c7e450362c76e7951865b5b754bc5e19"
+    },
+    {
+      "path": "server/__tests__/chat-identity.test.ts",
+      "bytes": 2572,
+      "sha256": "c8252b9cb7fcd91cbf515b7133daac5655289241296110d8a23e09447afc04ce"
+    },
+    {
+      "path": "server/__tests__/checkout-payment-flow.test.ts",
+      "bytes": 29601,
+      "sha256": "5aac59578c775330da84735b1ac7966e9417a425b3659f367742bb9083009cdc"
+    },
+    {
+      "path": "server/__tests__/checkout-workflow-safety.test.ts",
+      "bytes": 1137,
+      "sha256": "a4479c18443805fddc362732324fbad071eb8b1f2adff1e723f9befa12e9b5e4"
+    },
+    {
+      "path": "server/__tests__/concierge-lead-schema.test.ts",
+      "bytes": 4438,
+      "sha256": "46fff6638f98c36959aa51cbf50f18efe719bed0d87fb9184ebde5d939bfd871"
+    },
+    {
+      "path": "server/__tests__/concordia-care-blister-sync.test.ts",
+      "bytes": 7264,
+      "sha256": "b4efb77230381940350a43ab789d4e985330dda8616a50ccd0d862c53c14ba06"
+    },
+    {
+      "path": "server/__tests__/concordia-care-identity.test.ts",
+      "bytes": 2153,
+      "sha256": "553a604c2d5737f7e63ae4554e3b0a005a0c49748940cb5ad001cd4562362fc0"
+    },
+    {
+      "path": "server/__tests__/concordia-care-sync-config.test.ts",
+      "bytes": 987,
+      "sha256": "6c46705ae47d08d1fc722ff00a9e0e7783a3f58a1df85c2459f1f9790a226b0f"
+    },
+    {
+      "path": "server/__tests__/draft-inventory.test.ts",
+      "bytes": 21973,
+      "sha256": "2cec5ddda5b8b24b3cfd7337415b04a97c52d638b706c78c7d2b22af7569f2d9"
+    },
+    {
+      "path": "server/__tests__/flu-shot-notifications.test.ts",
+      "bytes": 12196,
+      "sha256": "912a08efda7a2013b71c898e54868cebafbf3eb61b8654db9bfafd1295d9c0a2"
+    },
+    {
+      "path": "server/__tests__/fraud-alert-service.test.ts",
+      "bytes": 2505,
+      "sha256": "f038f010724e322905811dce084b51e1bdd1c8b6a797bdfe5009524da51bdf4a"
+    },
+    {
+      "path": "server/__tests__/guest-checkout.test.ts",
+      "bytes": 18892,
+      "sha256": "da78365a63ec198fce0090901faaedccc578332928ec1a5d0c4d8f5cac7a7c17"
+    },
+    {
+      "path": "server/__tests__/mixed-request-service.test.ts",
+      "bytes": 4961,
+      "sha256": "8f99d70041df7f773c2dba015fadc57f70c6ef9d43d71f8cf6895acd9be5ac90"
+    },
+    {
+      "path": "server/__tests__/order-number.test.ts",
+      "bytes": 13614,
+      "sha256": "cd5f6c44f3ce1f206ae99ced9e07fdc2c440826d8a410e25d39bf41141b79f90"
+    },
+    {
+      "path": "server/__tests__/order-status-push.test.ts",
+      "bytes": 22331,
+      "sha256": "24eed6dc96d2d173186bf53209128b2ce8a24d98951e194a1aba2fd2c15ffdc8"
+    },
+    {
+      "path": "server/__tests__/pa-analytics.test.ts",
+      "bytes": 11302,
+      "sha256": "80b9d5ec6d7a3f38194ce934fc1b310fcd5a05ee7808b564c1d4f0be5303f933"
+    },
+    {
+      "path": "server/__tests__/pa-appeal-routes.test.ts",
+      "bytes": 16460,
+      "sha256": "dacc295bd7fcf7c64030d62886db83ca493d583123cbc764ac685bdd68e9d0e6"
+    },
+    {
+      "path": "server/__tests__/pa-appeal.test.ts",
+      "bytes": 10919,
+      "sha256": "a28ffbcec302f83d51af587753a8e1eafbce4b876bd6981c9ed9447628b3ce47"
+    },
+    {
+      "path": "server/__tests__/pa-signature-migration.test.ts",
+      "bytes": 1055,
+      "sha256": "54ad10a9b45a55fa9b26c46fb8d9c2f65213171e1221b9de593d265e23d074fc"
+    },
+    {
+      "path": "server/__tests__/pa-signature.test.ts",
+      "bytes": 17459,
+      "sha256": "ca241cbdfa3abead4d996d5139fb2ff9b6d44f66c8d9251ccddccbb4278f7f8d"
+    },
+    {
+      "path": "server/__tests__/pharmflows-client.test.ts",
+      "bytes": 8318,
+      "sha256": "7d219a4cbb082a2be8bb0a9a161647c9e73c29c2cf3775e4ef3db0491669666e"
+    },
+    {
+      "path": "server/__tests__/preregistration-ticket-access.test.ts",
+      "bytes": 36652,
+      "sha256": "27332bc47bc1bf623593cf2051abfa3d4e03c845dc9405ccdf18bbe2da448e62"
+    },
+    {
+      "path": "server/__tests__/primerx-ownership.test.ts",
+      "bytes": 2557,
+      "sha256": "181c70fcde79131694babca15dc15e764bdd878403b00bf6a18631837007e065"
+    },
+    {
+      "path": "server/__tests__/recoverLegacyClerkHandshake.test.ts",
+      "bytes": 2019,
+      "sha256": "e76f5db5c9317f30b930069800ad20308b6dd98610958224067a00070fda501b"
+    },
+    {
+      "path": "server/__tests__/refill-credit-service.test.ts",
+      "bytes": 1511,
+      "sha256": "b5c5a8b4a7b0cc87dd757e18cac1be3bbb6884feea600404fdc3c0d94f5d51fe"
+    },
+    {
+      "path": "server/__tests__/request-idempotency.test.ts",
+      "bytes": 890,
+      "sha256": "720a9f244549240c14dd6206671bbab7b3b448057e33eeef9ec8ee31b9931738"
+    },
+    {
+      "path": "server/__tests__/seasonal-theme.test.ts",
+      "bytes": 7600,
+      "sha256": "12f2ab47733ef9405d4428455fe081dfa87cd71c307e81f270984688270f0a32"
+    },
+    {
+      "path": "server/__tests__/seo-render.test.ts",
+      "bytes": 2136,
+      "sha256": "fe917d5be6907ddc04ee00cd5b69c26ae75f7d1c937c0c21e986948d72b4d462"
+    },
+    {
+      "path": "server/__tests__/shop-order-requests.test.ts",
+      "bytes": 11884,
+      "sha256": "342e93f936004f8fc599100827537a502d5383bce353dec5fb8949db78986bd7"
+    },
+    {
+      "path": "server/__tests__/sig-parser.test.ts",
+      "bytes": 22711,
+      "sha256": "72ecd4747ee2ed9b591590c64b76761c59a50d5ecc0dcb5b2920d1203c4f2eaf"
+    },
+    {
+      "path": "server/__tests__/specialty-request-contract.test.ts",
+      "bytes": 1753,
+      "sha256": "6a7ea0d8dabd2c726fbf8fec52b3a4ad582d0295fc0969b98eaefec37a8a716d"
+    },
+    {
+      "path": "server/__tests__/staff-integration.test.ts",
+      "bytes": 25476,
+      "sha256": "dd73c6f5cb9ff2389a96df0c3153cfd673a79a3247babcc82f80698a03ec7d1e"
+    },
+    {
+      "path": "server/__tests__/staff-order-delivery.test.ts",
+      "bytes": 3584,
+      "sha256": "12db44719966f02428c00a828b93a6bb4bd0d1827978ca681f1921efdbedb013"
+    },
+    {
+      "path": "server/__tests__/staff-order-status.test.ts",
+      "bytes": 1288,
+      "sha256": "9043f1b2583f2fac0318e6c3796ac2bd7b44407d7b27b92a6424288c46c6e01b"
+    },
+    {
+      "path": "server/__tests__/staff-payload.test.ts",
+      "bytes": 863,
+      "sha256": "f72bc68d9303f499f65ad40988c92a40127bef8ebd4f25b44910953f10949118"
+    },
+    {
+      "path": "server/__tests__/void-order-points.test.ts",
+      "bytes": 7515,
+      "sha256": "d0c66d78cfe401a7d1a5f1c61aa9f98f0bfbda6b214c6846c1186c014d61ca95"
+    },
+    {
+      "path": "server/address-verification.ts",
+      "bytes": 6553,
+      "sha256": "3e85e3ceb7d9975ff2eff302a52e2e75200728b3e3777c6f17a0df79e5cca19b"
+    },
+    {
+      "path": "server/ai-client.ts",
+      "bytes": 956,
+      "sha256": "4f379c98c17c1b890642f853fc5fc820785097e3b97c2cd020e815bb62445a90"
+    },
+    {
+      "path": "server/auditLogger.ts",
+      "bytes": 3598,
+      "sha256": "b1418e8c7e448972e89eaa96191985d852dacd0bbeb4446d2db4c9122e5ae159"
+    },
+    {
+      "path": "server/canonicalPatientIdentity.ts",
+      "bytes": 1080,
+      "sha256": "19f7d11853d1b8b382a89a7cd66775c198059f45ad62b70f045d4709ef18e7fa"
+    },
+    {
+      "path": "server/care-navigator-service.ts",
+      "bytes": 13639,
+      "sha256": "0da7dcc51f76f0c1247dfd1198e1288abde7d77b72f675504d197842691e2430"
+    },
+    {
+      "path": "server/chat-action-model.ts",
+      "bytes": 13722,
+      "sha256": "d51c2a625e026b3d23f1a6cf580d16c0ea2bb01909c803896996fec7eb0ae087"
+    },
+    {
+      "path": "server/chat-identity.ts",
+      "bytes": 12463,
+      "sha256": "65dbdef4251a62c37fbc6cbb5321e9b49b2ee4ec9b34edf2f5ebac6ed7e2cda6"
+    },
+    {
+      "path": "server/checkout-service.ts",
+      "bytes": 11016,
+      "sha256": "bcbea3942f2b1d23e16ed51a77422367defa35ec5ae0948dfa553bdc1ee47643"
+    },
+    {
+      "path": "server/clerkAuth.ts",
+      "bytes": 13388,
+      "sha256": "c07a022e8d3169f08f769291455b5b67b2acd0d2fc158de6ac17d8ba1fdd2f9b"
+    },
+    {
+      "path": "server/clinical-notes-service.ts",
+      "bytes": 11034,
+      "sha256": "6efb4a976e13ed050bdc505213f72f5ff5d7e064906700b3232f313355129cbb"
+    },
+    {
+      "path": "server/concierge-lead-schema.ts",
+      "bytes": 5327,
+      "sha256": "a07206229ac061c476db2f4f438754777b089a1d0410d14bf226b6a9f9bd23f3"
+    },
+    {
+      "path": "server/concordia-care-blister-sync.ts",
+      "bytes": 6794,
+      "sha256": "e45a306b465fcb567b2bf8c7123a6284faa7e24c49665565c3374fb75f0d3119"
+    },
+    {
+      "path": "server/concordia-care-sync.ts",
+      "bytes": 511,
+      "sha256": "bddc3fb67ab6e296fe786fde5b6f6ef0e3cbbf7712d91c0f1f7a7ee2209ed9de"
+    },
+    {
+      "path": "server/concordiaCareIdentity.ts",
+      "bytes": 2282,
+      "sha256": "e64fd4c902d008aa611d22c4761ecc87edd0e27f3d8266aea29da86527542d03"
+    },
+    {
+      "path": "server/concordiaId.ts",
+      "bytes": 3582,
+      "sha256": "ea07689e4fccb71bbe454ad8d8acb099f4902382b702595056d404c365716941"
+    },
+    {
+      "path": "server/db.ts",
+      "bytes": 850,
+      "sha256": "a15bdb56afec89b08ceb9ec95a6996b12d3e3b05a19eb1e2d2413158a794ff68"
+    },
+    {
+      "path": "server/email.ts",
+      "bytes": 2870,
+      "sha256": "980de9e0c9793a521d2564adccfc580be88450e87b4eb14bbf9aa655394b394f"
+    },
+    {
+      "path": "server/fhir-service.ts",
+      "bytes": 12641,
+      "sha256": "e074dc37f19566786e41b3ca92d4dfd172e56893d378cb35ce1a3726a8baf761"
+    },
+    {
+      "path": "server/flu-shot-notifications.ts",
+      "bytes": 6442,
+      "sha256": "acb9ea23718ced6eca2c4f59e4958034f44ce1abc4f698e35d9271bdfcaa2490"
+    },
+    {
+      "path": "server/flu-shot-routes.ts",
+      "bytes": 3953,
+      "sha256": "aeb52c157ad0c1f2c28954771d7a79ae682d62f3ff0472c17c23a7906812c74f"
+    },
+    {
+      "path": "server/fraud-alert-service.ts",
+      "bytes": 4999,
+      "sha256": "91d64ea844be4c7dc324b15ce2b3ded48c1a3a7e3f3de726de92728b045fd8d1"
+    },
+    {
+      "path": "server/guest-checkout-service.ts",
+      "bytes": 7186,
+      "sha256": "56e0940086d8b657e2e50167a8882b612c8ec5f044a8c8186fb9c61700510797"
+    },
+    {
+      "path": "server/index.ts",
+      "bytes": 8690,
+      "sha256": "f345d906aa6b636b8fcaf54c20c9cd5356e6ec433d1e5b5b98c939b0a11da3f1"
+    },
+    {
+      "path": "server/indexnow.ts",
+      "bytes": 802,
+      "sha256": "9fc189319d57565300a631faf4d5c18223206f69ab6077b79280413444079b87"
+    },
+    {
+      "path": "server/middlewares/clerkProxyMiddleware.ts",
+      "bytes": 2984,
+      "sha256": "1fa4f2ca4fd42a0cefc09456252cf07310ab3c6328bb056b89ec9e9a329a9dbc"
+    },
+    {
+      "path": "server/middlewares/recoverLegacyClerkHandshake.ts",
+      "bytes": 747,
+      "sha256": "cd8f930a9327b4fa08104705df8c8387da493a43cd1604ad72df367094b2c7dd"
+    },
+    {
+      "path": "server/migrations/blister-enrollment-id.ts",
+      "bytes": 2865,
+      "sha256": "c39eb81bf290599fb5900880d4461589876cec3a312cb3deac9918748f7ae07d"
+    },
+    {
+      "path": "server/migrations/chat-identity.ts",
+      "bytes": 1219,
+      "sha256": "5c6d4df417a8b621863c48cfcc50f05fbdf21ab8feda6512607b133b28fee09f"
+    },
+    {
+      "path": "server/migrations/concierge-lead-idempotency.ts",
+      "bytes": 594,
+      "sha256": "89ca2fa03a6fcbc105ba402a433fc2c975afa26bc433a095ebc0c495f99a7cc2"
+    },
+    {
+      "path": "server/migrations/pa-signature-columns.ts",
+      "bytes": 3211,
+      "sha256": "eb6fd9cca5ee5738f4fcaff9b67d9ed409c1a73695516ce3826bee6d9c817c5f"
+    },
+    {
+      "path": "server/mixed-request-service.ts",
+      "bytes": 6993,
+      "sha256": "bcb3d6283d6fc6ed02ece59aa8afd8bc19373a7e90b799b27f8bc36511d69843"
+    },
+    {
+      "path": "server/ndc-service.ts",
+      "bytes": 8817,
+      "sha256": "e2b1f16cb3e6898e7e81d863f06f959bdc2b142ccdb2b18b540ead6020172fcf"
+    },
+    {
+      "path": "server/objectAcl.ts",
+      "bytes": 2353,
+      "sha256": "3802c1613536b71a5a13e64982f42430d91afbfa12306b776a1e6e24cfb15a87"
+    },
+    {
+      "path": "server/objectStorage.ts",
+      "bytes": 10690,
+      "sha256": "66b58ceb1110fad0fa6ec20f5d5c4e5a52b2c49eca9b4b4fa83171c4219a91cd"
+    },
+    {
+      "path": "server/order-number-util.ts",
+      "bytes": 282,
+      "sha256": "21d25b56f6077bad803b591136b9cd668394af4bb045d13382a0b9fc29a0af86"
+    },
+    {
+      "path": "server/pa-analytics-helpers.ts",
+      "bytes": 2453,
+      "sha256": "f60f1a9f99db3456c9e5281279707e2890811f9a09b1a7997c452b18d123e2c7"
+    },
+    {
+      "path": "server/pa-service.ts",
+      "bytes": 19939,
+      "sha256": "0c9898613a593a39631f6c1ee43d989c6ba27c6711a68641c7f634124cb9c296"
+    },
+    {
+      "path": "server/pa-signature-routes.ts",
+      "bytes": 13481,
+      "sha256": "ec0bce7723d517916ed1b8c217dbb815aa05f54ea0e5cbc07d239d4bf9731d18"
+    },
+    {
+      "path": "server/patientIdentity.ts",
+      "bytes": 7747,
+      "sha256": "04e62fc1bb581b7d50205f6d24debc20bab6daac03be691a58c77626682da237"
+    },
+    {
+      "path": "server/pharmflows-client.ts",
+      "bytes": 6975,
+      "sha256": "d70c41bd7043436111ac09c467a9d894ae0cbfe7bd91f7e7093fff0f3767b3ce"
+    },
+    {
+      "path": "server/points-service.ts",
+      "bytes": 17346,
+      "sha256": "7051f5fb726d36764b922533a312ed6bd63338a074cea922f6d2c818cddc668d"
+    },
+    {
+      "path": "server/primerx-api.ts",
+      "bytes": 19376,
+      "sha256": "5832ce226f53c32cad6042da7d1aed58e8d02fb880862d398520ef74a9f87591"
+    },
+    {
+      "path": "server/primerx-ownership.ts",
+      "bytes": 2385,
+      "sha256": "6bb81552c77fa145eb4725451b2b1b4cc220e5f729fd8b69b3cd98d1d37645dc"
+    },
+    {
+      "path": "server/primerx-webhook.ts",
+      "bytes": 14458,
+      "sha256": "d86c42a7a88a155e419b65878e64b0e7fc568e8884981b1a05de1e645622730c"
+    },
+    {
+      "path": "server/product-seeds.ts",
+      "bytes": 9586,
+      "sha256": "2e564feb3c96d545d388bfc133d0e94e0a5abd5b712a5b6c27a17a5fa52469d9"
+    },
+    {
+      "path": "server/public-mcp.ts",
+      "bytes": 7947,
+      "sha256": "4d73ff721f121e181478a981970fa403e67290c9ba2b96d7a516d0df62c6b19c"
+    },
+    {
+      "path": "server/public-pages.ts",
+      "bytes": 7868,
+      "sha256": "17806298198256b700e9739bcaadc11df303e90ca6fce5f643890b93971ce0e2"
+    },
+    {
+      "path": "server/refill-credit-service.ts",
+      "bytes": 10585,
+      "sha256": "bfd96e60cb016d7a7fe1e47ec5e83c85ddd5964ee98b80e31183c33900e1e49b"
+    },
+    {
+      "path": "server/replitAuth.ts",
+      "bytes": 6364,
+      "sha256": "665900d15a632eef83cbd5117f33466d39201e807907a5a5b4519927a7908272"
+    },
+    {
+      "path": "server/request-idempotency.ts",
+      "bytes": 3739,
+      "sha256": "2811a202284897a7cfbfc581edf5254509ee10a6a52ffa1508c599fa11e8e706"
+    },
+    {
+      "path": "server/routes.ts",
+      "bytes": 743911,
+      "sha256": "22cd81aa4e2345fb69297879956c70bcce0c753680c2942ad71b000318171596"
+    },
+    {
+      "path": "server/rss-fetcher.ts",
+      "bytes": 9591,
+      "sha256": "73efbb8e5ec5641ec605b3c5c06d2554df752790c69b70017148a4f3e5c72e23"
+    },
+    {
+      "path": "server/seasonal-theme-routes.ts",
+      "bytes": 1420,
+      "sha256": "e2bb34749da3b3404185a57d9db11f7f67247a4f31b1c06577c194ae41aaa79c"
+    },
+    {
+      "path": "server/seasonal-theme.ts",
+      "bytes": 7016,
+      "sha256": "205524bf05cfa0447ffcea958b235c4e7324f43366d6d9fbcebd5a45b7a89579"
+    },
+    {
+      "path": "server/seed-specialty.ts",
+      "bytes": 108213,
+      "sha256": "5da3dfe28e66ea779aa0b39930d82f80deaca1794fb9dbe1727cc3e66feaa964"
+    },
+    {
+      "path": "server/seed.ts",
+      "bytes": 3885,
+      "sha256": "1bf43fe8e3edda22b2b7a432f7423019cb968e14abe7cde0dd24db20cefaea4c"
+    },
+    {
+      "path": "server/seo-render.ts",
+      "bytes": 6838,
+      "sha256": "00401dc601ab8ca3bfb48ded4a40275a45e2cd081d1c2c08f8c2f0fbd22a59b5"
+    },
+    {
+      "path": "server/shop-order-requests.ts",
+      "bytes": 7836,
+      "sha256": "e51b82168af43f57bb0a51313dc8788bcb1bf5a26b8bdbf5613c6fae1f908dec"
+    },
+    {
+      "path": "server/sig-parser.ts",
+      "bytes": 7786,
+      "sha256": "d19c8aef8d35710a4812435cc68c1baee2692b85c24d5898b560986c318cf6ec"
+    },
+    {
+      "path": "server/sms.ts",
+      "bytes": 3911,
+      "sha256": "4707e155b0e3b78303f942994f9ca62315c0e552e032a0659ba16e031cfdeab2"
+    },
+    {
+      "path": "server/staff-catalog.ts",
+      "bytes": 11024,
+      "sha256": "c9404c3d552bc28f3ff5b25df267ccddee7fe988e07004000511821131c6148e"
+    },
+    {
+      "path": "server/staff-inventory-events.ts",
+      "bytes": 221,
+      "sha256": "7073b27ab1c01187d4613072b002e82698a55335f633cffe8af6f0ccfa700fe5"
+    },
+    {
+      "path": "server/staff-inventory-routes.ts",
+      "bytes": 7034,
+      "sha256": "0d969ce9ba4860712dd3d05a85f371f62ebf554adf7cff82b30d54725f046ca9"
+    },
+    {
+      "path": "server/staff-order-delivery.ts",
+      "bytes": 6199,
+      "sha256": "546d1b424e0fdc5870814b3bee5948f74eec028d887853bf1aa8c2d1be3ecdcc"
+    },
+    {
+      "path": "server/staff-order-status.ts",
+      "bytes": 1304,
+      "sha256": "66c9ed89c19039e18369574d339f22004b13296c48ccba3708b5f8bbe0cbeb36"
+    },
+    {
+      "path": "server/staff-sync.ts",
+      "bytes": 2176,
+      "sha256": "f7b528ee970b5fcfa5aa8a91d7bcaddcd60fc89c949df2985a21f751bae7159b"
+    },
+    {
+      "path": "server/storage.ts",
+      "bytes": 208733,
+      "sha256": "8813d09c4f1d6951163980c778df553dea75f99d1ef2be2390e2e37f45bfc97e"
+    },
+    {
+      "path": "server/types/word-extractor.d.ts",
+      "bytes": 195,
+      "sha256": "caf0ce8c5d07348c4b4e5f4fd989cbd9be5ddc61e7bde298917a775d4597fff5"
+    },
+    {
+      "path": "server/vite.ts",
+      "bytes": 3683,
+      "sha256": "daa119f9b0702718568d107a99e13ecdc8a584da39b493a00e4a5e9428c75c57"
+    },
+    {
+      "path": "shared/cart-utils.ts",
+      "bytes": 489,
+      "sha256": "2cb4b5f68f079c3c20a040548f41250b494f79df9eb7c52f2a6c723a80fb3be3"
+    },
+    {
+      "path": "shared/flu-shot-notifications.ts",
+      "bytes": 1197,
+      "sha256": "c82d80115f2759ce59e7380d4fa05c4f8b00389007313b645a860049416b4b17"
+    },
+    {
+      "path": "shared/schema.ts",
+      "bytes": 115020,
+      "sha256": "7f7dba9cda230cac2a3916ca8eb6a028152a62cccdbbda78daa5c47ffddc25b0"
+    },
+    {
+      "path": "shared/seasonal-theme.ts",
+      "bytes": 704,
+      "sha256": "73b53dbcd7bf63d40d70a96ecc2b77f3da77b09c9bbb472e85aef03e8b3cb724"
+    },
+    {
+      "path": "shared/shop-request.ts",
+      "bytes": 1270,
+      "sha256": "7d0d65ce0c5360995eec7c5eb35b5d3fc3a6cf1b5a5045648535dc57ca8e6cf6"
+    },
+    {
+      "path": "tailwind.config.ts",
+      "bytes": 4052,
+      "sha256": "e2316af5d19906f48f39a6015604795c162856bb9ae424683a7649564a132cdf"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 681,
+      "sha256": "4ea0fbb62b1a8ff6040afaaaa886ac22ea0e5a30953d225cac8aede988d04c05"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 1667,
+      "sha256": "6cfc8af7ac24a93c8786ba51a52d5dac7fc257712ab7e153af6975a7e9d74368"
+    },
+    {
+      "path": "vitest.config.ts",
+      "bytes": 447,
+      "sha256": "682c7434902610242cacfe02ea9c7be8f2f2844646e4a405c22cf163b6c1887e"
+    }
+  ]
+}
